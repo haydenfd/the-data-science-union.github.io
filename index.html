@@ -2,91 +2,80 @@
 <html>
     <head>
         <title>Data Science Union at UCLA</title>
-        <link href="./style.css" type="text/css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="shortcut icon" href="logo_bear.png">
+        <link href="./style_edited.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     </head>
     <body>
-            <nav class="navbar">
-                    <a href="./index.html"> <img id='logo_dsu' src="./Elements/Landing Page/logo_dsu.png"></a>
-                <ul> 
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <div id="header">
+            <a class="column left" href="./index.html"> <img id="logo_dsu" src="./Elements/Landing Page/logo_dsu.png"></a>
+            <nav class="column right">
+                <ul id="navbar">
                     <li><a href="./about.html" target="_blank">&lt;About_Us&gt;</a></li>
-                    &nbsp; &nbsp;
                     <li><a href="./team.html" target="_blank">&lt;The_Team&gt;</a></li>
-                    &nbsp; &nbsp;
                     <li><a href="./our_projects.html" target="_blank">&lt;Projects&gt;</a></li>
-                    &nbsp; &nbsp;
                     <li><a href="./apply.html" target="_blank">&lt;Applications&gt;</a></li>
-                    &nbsp; &nbsp;
-                    <img id="navbar-line" src='./Elements/Landing Page/navbar_line.png'>
                 </ul>
-                
             </nav>
+        </div>
 
-
-
-        <main class="landing">
-
-            <img src='./Elements/Landing Page/dsu.png'>
-        
+         <main id="landing">
+             <p id="dsu">Data Science Union</p>
+             <p id="ucla">_UCLA_</p>
+            <img id="landingImg" src='./Elements/Landing Page/landing.png'>
         </main>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    
-     <div class='landing_2'>
-            <h2 style='color: #2E488E;'>Who_We_Are</h2>
-            <p>Data Science Union is a student organization founded in March of 2019. Our goal is to cultivate a thriving community of data science professionals at UCLA. The three components of our club prepare members for careers in data science: out self-designed curriculum, real-world projects, and professional development opportunities.</p>
-    </div>
-   <!--
-        <div class="container border border-primary rounded justify-content-right">
-            <h2>Languages and Software</h2>
-            <hr>
-            <p style="text-align: center;">Many of our members have prior experience in <b style="color:orange">R</b> and <b style="color:orange">RStudio</b>. <br>Using the Anaconda distribution, our members learn <b style="color:orange">Python</b> for <br>its popularity among data scientists and extensive applications <br>and libraries. We also integrate <b style="color:orange">SQL</b> and <b style="color:orange">mySQL Workbench</b> into <br>our curriculum to expose our members to querying and analyzing <br>data stored in databases.</p>
+        <div id="landing_2">
+            <h2>Who_We_Are</h2>
+            <p>The Data Science Union is a professional student organization founded in March of 2019. Our goal is to cultivate a thriving community of data science professionals at UCLA. The three components of our club prepare members for careers in data science: our self-designed curriculum, real-world projects, and professional development opportunities.</p>
         </div>
-    -->
-    
 
-   
-        <div>
-            <img src = './Elements/Landing Page/member_count.png' style = 'display: block;'>
-            <img src = './Elements/Landing Page/project_count.png'>
-           <img src = './Elements/Landing Page/lang_software.png' style='display: inline'>
+        <div id="landing_3">
+            <div class="column left">
+                <p class="numbers">19</p>
+                <p class="membersProjects">members</p>
+                <p class="numbers">2</p>
+                <p class="membersProjects">projects</p>
+            </div>
+            <div class="column right">
+                <h2>Languages and Software</h2>
+                <p id="langText">Many of our members have prior experience in <b>R</b> and <b>RStudio</b>. Using the Anaconda distribution, our members learn <b>Python</b> for its popularity among data scientists and extensive applications and libraries. We also integrate <b>SQL</b> and <b>mySQL Workbench</b>  into our curriculum to expose our members to querying and analyzing data stored in databases.</p>
+                <img id="langSoft" src='./Elements/Landing Page/language_software.png'>
+            </div>
         </div>
-     
-        <div class='zoom-laptop'>
-            
-            <img src = './Elements/Landing Page/zoom_laptop.png'>
-            <div class='zoom-description'>
-                <h2 style='color: #2E488E;'>We_Are_Moving_Online!</h2>
-                <p>We can't meet in person, but we still want to see you! In Fall 2020, we will conduct online recruitment, and all club operations will be online. Please check out our timeline and frequently asked questions here.</p>
+
+        <div id="landing_4">
+            <div class="column left"><img src = './Elements/Landing Page/zoom_laptop.png'></div>
+            <div class='column right zoom-description'>
+                <h2>We_Are_Moving_Online!</h2>
+                <p id="onlineText">We can’t meet in person, but we still want to see you! In Fall 2020, we will conduct online recruitment, and all club operations will be online. Please check out our timeline and frequently asked questions below!</p>
                 <button onclick="location.href='./apply.html'" value="Go to Google">Interested in Joining?</button>
             </div>
-        
         </div>
-  
+
         <footer>
             <ul>
-                <li class="text-left"><a class="text-white" href="./index.html">Home</a></li>
-                <li class="text-left"><a class="text-white" href="./about.html">About Us</a></li>
-                <li class="text-left"><a class="text-white" href="./team.html">The Team</a></li>
-                <li class="text-left"><a class="text-white" href="./about.html">Projects</a></li>
-                <li class="text-left"><a class="text-white" href="./apply.html">Applications</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./team.html">The Team</a></li>
+                <li><a href="./about.html">Projects</a></li>
+                <li><a href="./apply.html">Applications</a></li>
             </ul>
-
-            <div class="contact">
+    
+            <div id="contact">
                 <h2>&gt; Contact Us</h2>
-                <p>[1] email: (ucladsu@gmail.com) </p>
+                <p>[1] email: ucladsu@gmail.com </p>
             </div>
-
-            <ul class="social">
+    
+            <ul id="social">
                <li><a href="https://www.instagram.com/dsuatucla/" target="_blank"><img src="./Elements/Landing Page/ig_logo.png" alt="Instagram" style = "width:50px; height:50px; border:0; border-radius: 100%;"> </a></li>
-                <li><a href="https://www.linkedin.com/company/the-data-science-union-at-ucla/"> <img src="./Elements/Landing Page/linkedin_logo.png" alt="LinkedIn" style = "width:50px; height:50px; border:0; border-radius: 100%;"></a></li>
+                <li><a href="https://www.linkedin.com/company/the-data-science-union-at-ucla/" target="_blank"> <img src="./Elements/Landing Page/linkedin_logo.png" alt="LinkedIn" style = "width:50px; height:50px; border:0; border-radius: 100%;"></a></li>
                 <li><a href="https://www.facebook.com/DSUatUCLA/" target="_blank"><img src="./Elements/Landing Page/facebook_logo.png" alt="Facebook" style = "width:50px; height:50px; border:0; border-radius: 100%;"></a></li>
+                <p>Copyright © 2020 Data Science Union.<br>All rights reserved.</p>
             </ul>
-
+    
         </footer>
+
     </body>
 
 </html>
