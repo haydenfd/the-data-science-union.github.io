@@ -1,0 +1,356 @@
+body{
+  margin: 0px;
+  background: linear-gradient(180deg, #FFFFFF 32.81%, #E0ECFE 100%);
+  background-attachment: fixed;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 156%;
+  letter-spacing: 0.05em;
+}
+
+/*
+ #     # #######    #    ######  ####### ######  
+ #     # #         # #   #     # #       #     # 
+ #     # #        #   #  #     # #       #     # 
+ ####### #####   #     # #     # #####   ######  
+ #     # #       ####### #     # #       #   #   
+ #     # #       #     # #     # #       #    #  
+ #     # ####### #     # ######  ####### #     #                                               
+*/
+#header {
+  position: relative;
+  width: 100%;
+}
+
+#header .column {
+  position: relative;
+  float: left;
+}
+
+#header .column.left{
+  width: 30%;
+}
+
+#header .column.right{
+  width: 70%;
+  text-align: right;
+}
+
+/*
+ ####### ####### ####### ####### ####### ######  
+ #       #     # #     #    #    #       #     # 
+ #       #     # #     #    #    #       #     # 
+ #####   #     # #     #    #    #####   ######  
+ #       #     # #     #    #    #       #   #   
+ #       #     # #     #    #    #       #    #  
+ #       ####### #######    #    ####### #     # 
+                                                 
+*/
+
+footer {
+  position: relative;
+  background-color: #2E488E;
+  top: 400px;
+  height: 400px;
+  padding-left: 10%;
+}
+
+footer ul {
+  padding: 0px;
+}
+
+footer li {
+  display: inline-block;
+  padding-top: 50px;
+  padding-right: 50px;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer #contact {
+  position: relative;
+  display: inline-block;
+  top: 150px;
+  color: #ffffff;
+}
+
+footer #social {
+  margin: 0px;
+  margin-right: 10%;
+  text-align: right;
+}
+
+footer #social li{
+  padding-top: 0px;
+  padding-right: 15px;
+}
+
+footer #social p {
+  color: #ffffff;
+}
+
+/* 
+ #          #    #     # ######  ### #     #  #####     ######     #     #####  ####### 
+ #         # #   ##    # #     #  #  ##    # #     #    #     #   # #   #     # #       
+ #        #   #  # #   # #     #  #  # #   # #          #     #  #   #  #       #       
+ #       #     # #  #  # #     #  #  #  #  # #  ####    ######  #     # #  #### #####   
+ #       ####### #   # # #     #  #  #   # # #     #    #       ####### #     # #       
+ #       #     # #    ## #     #  #  #    ## #     #    #       #     # #     # #       
+ ####### #     # #     # ######  ### #     #  #####     #       #     #  #####  ####### 
+                                                                                        
+*/
+
+#logo_dsu {
+  position: relative;
+  left: 50px;
+  top: 20px;
+  width: 250px;
+}
+
+#navbar {
+  position: relative;
+  display: inline-block;
+  top: 30px;  
+  padding-left: 150px;
+  padding-right: 100px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+}
+
+#navbar li{
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#navbar a {
+  text-decoration:none;
+  font-size: 18px;
+  color: #4C4C4C;
+  letter-spacing: 0.02em;
+  transition-property: background-color;
+  transition-duration: 1.5s;
+}
+
+#navbar a:hover {
+  color: #F3A47D;
+}
+
+#header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#landing {
+  position: relative;
+  top: 30px;
+}
+
+#landing #dsu {
+  position: absolute;
+  left: 10%; 
+  top: 10%;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 82px;
+  letter-spacing: 0.03em;
+  color: #344F99;
+}
+
+#landing #ucla {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 61px;
+  letter-spacing: 0.05em;
+  color: #595D60;
+}
+
+#landingImg {
+  position: relative;
+  left: 10%;
+  max-width: 90%;
+}
+
+#landing_2 {
+  position: relative;
+  margin-top: 200px;
+  margin-bottom: 250px;
+}
+
+#landing_2 h2 {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #2E488E;
+}
+
+#landing_2 p{
+  width: 70%;
+  margin: auto;
+  line-height: 156%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #4C4C4C;
+}
+
+#landing_3 {
+  position: relative;
+  width: 100%;
+}
+
+#landing_3 .column {
+  position: relative;
+  float: left;
+}
+
+/* Left and right column */
+#landing_3 .column.left{
+  width: 40%;
+}
+
+#landing_3 .numbers {
+  padding-left: 30%;
+  margin: 0px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 82px;
+  letter-spacing: 0.05em;
+  color: #F3A47D;
+}
+
+#landing_3 .membersProjects {
+  padding-left: 30%;
+  margin: 0px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 54px;
+  letter-spacing: 0.05em;
+  color: #4C4C4C;
+}
+/* Middle column */
+#landing_3 .column.right {
+  width: 50%;
+}
+
+#landing_3 #langSoft {
+  max-width: 100%;
+}
+
+#landing_3 h2 {
+  position: absolute;
+  top: 10px;
+  width: 80%;
+  margin-left: 10%;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #8B98C2;
+  border-bottom: 1px solid #2E488E;
+}
+
+#landing_3 #langText {
+  position: absolute;
+  top: 30%;
+  padding-left:10%;
+  padding-right: 10%;
+  text-align: center;
+  color: #4C4C4C;
+}
+
+#landing_3 #langText b {
+  font-weight: bold;
+  color: #FF925B;
+}
+
+#landing_3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*
+.container {
+  margin: 20%;
+  padding: 50px 50px;
+  background-color: lightblueß;
+  box-shadow: lightblue;
+}
+
+
+a:link, a:visited {
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}*/
+
+#landing_4 {
+  position: relative;
+  top: 200px;
+}
+
+#landing_4 .column {
+  float: left;
+}
+
+#landing_4 .column.left {
+  width: 50%;
+}
+
+#landing_4 img {
+  width: 100%; 
+}
+
+#landing_4 .column.right {
+  width: 40%;
+  padding-left: 50px;
+  margin-top: 50px;
+}
+
+#landing_4 h2 {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  color: #2E488E;
+}
+
+#landing_4 #onlineText {
+  color: #4C4C4C;
+}
+
+#landing_4 button {
+  margin-top: 10px;
+  background: #537ABB;
+  border-radius: 25px;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  border: none;
+  padding: 0.5em 2em;
+  cursor: pointer;
+}
+
+#landing_4:after {
+  content: "";
+  display: table;
+  clear: both;
+}
