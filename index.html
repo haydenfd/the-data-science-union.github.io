@@ -12,9 +12,9 @@
             <nav class="column right">
                 <ul id="navbar">
                     <li><a href="./about.html" target="_blank">&lt;About_Us&gt;</a></li>
-                    <li><a href="./team.html" target="_blank">&lt;The_Team&gt;</a></li>
+                    <!--<li><a href="./team.html" target="_blank">&lt;The_Team&gt;</a></li>-->
                     <li><a href="./our_projects.html" target="_blank">&lt;Projects&gt;</a></li>
-                    <li><a href="./apply.html" target="_blank">&lt;Applications&gt;</a></li>
+                    <li><a href="./apply.html" target="_blank">&lt;Join_Us&gt;</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,15 +32,16 @@
 
         <div id="landing_3">
             <div class="column left">
-                <p class="numbers">19</p>
-                <p class="membersProjects">members</p>
-                <p class="numbers">2</p>
-                <p class="membersProjects">projects</p>
+                <p id="checkProject" onclick="location.href='./our_projects.html'" value="Go to Google">Check out our recent projects! </p>
+                <p id="arrow">&gt; </p>
             </div>
             <div class="column right">
-                <h2>Languages and Software</h2>
-                <p id="langText">Many of our members have prior experience in <b>R</b> and <b>RStudio</b>. Using the Anaconda distribution, our members learn <b>Python</b> for its popularity among data scientists and extensive applications and libraries. We also integrate <b>SQL</b> and <b>mySQL Workbench</b>  into our curriculum to expose our members to querying and analyzing data stored in databases.</p>
-                <img id="langSoft" src='./Elements/landingPage/language_software.png'>
+                <div id="landSoftLayer">
+                    <h2>Languages and Software</h2>
+                    <p>Many of our members have prior experience in <b>R</b> and <b>RStudio</b>. Using the Anaconda distribution, our members learn <b>Python</b> for its popularity among data scientists and extensive applications and libraries. We also integrate <b>SQL</b> and <b>mySQL Workbench</b>  into our curriculum to expose our members to querying and analyzing data stored in databases.</p>
+                </div>
+                <h2 class="visible">Languages and Software</h2>
+                <p class="visible" id="langText">Many of our members have prior experience in <b>R</b> and <b>RStudio</b>. Using the Anaconda distribution, our members learn <b>Python</b> for its popularity among data scientists and extensive applications and libraries. We also integrate <b>SQL</b> and <b>mySQL Workbench</b>  into our curriculum to expose our members to querying and analyzing data stored in databases.</p>
             </div>
         </div>
 
@@ -49,7 +50,7 @@
             <div class='column right zoom-description'>
                 <h2>We_Are_Moving_Online!</h2>
                 <p id="onlineText">We can’t meet in person, but we still want to see you! In Fall 2020, we will conduct online recruitment, and all club operations will be online. Please check out our timeline and frequently asked questions below!</p>
-                <button onclick="location.href='./apply.html'" value="Go to Google">Interested in Joining?</button>
+                <button onclick="location.href='./apply.html'">Interested in Joining?</button>
             </div>
         </div>
 
@@ -57,9 +58,9 @@
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About Us</a></li>
-                <li><a href="./team.html">The Team</a></li>
+                <!--<li><a href="./team.html">The Team</a></li>-->
                 <li><a href="./about.html">Projects</a></li>
-                <li><a href="./apply.html">Applications</a></li>
+                <li><a href="./apply.html">Join Us</a></li>
             </ul>
     
             <div id="contact">
