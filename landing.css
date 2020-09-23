@@ -236,6 +236,7 @@ footer #social p {
   color: #537ABB;
   cursor: pointer;
   padding-right: 10px;
+  transition:padding-right .5s ease;
 }
 
 #landing_3 #arrow {
@@ -293,7 +294,7 @@ footer #social p {
   border: 2px solid #E6F0FF;
   box-sizing: border-box;
   border-radius: 47px;
-  margin-left: 40px;
+  margin-left: 35px;
   margin-top: 30px;
   width: 100%;
 }

@@ -3,37 +3,31 @@
 <html>
     <head>
         <title>Application</title>
-        <link href="./style.css" type="text/css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
+        <link rel="shortcut icon" href="logo_bear.png">
+        <link href="./apply.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <script src='script.js'></script>
     </head>
     
     <body>
-            <nav class="navbar">
-                    <a href="./index.html"> <img id='logo_dsu' src="./Elements/landingPage/logo_dsu.png"></a>
-                <ul> 
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <div id="header">
+            <a class="column left" href="./index.html"> <img id="logo_dsu" src="Elements/landingPage/logo_dsu.png"></a>
+            <nav class="column right">
+                <ul id="navbar">
                     <li><a href="./about.html" target="_blank">&lt;About_Us&gt;</a></li>
-                    &nbsp; &nbsp;
-                    <li><a href="./team.html" target="_blank">&lt;The_Team&gt;</a></li>
-                    &nbsp; &nbsp;
-                    <li><a href="./projects.html" target="_blank">&lt;Projects&gt;</a></li>
-                    &nbsp; &nbsp;
-                    <li><a href="./apply.html" target="_blank">&lt;Applications&gt;</a></li>
-                    &nbsp; &nbsp;
-                    <img id="navbar-line" src='./Elements/landingPage/navbar_line.png'>
+                    <!--<li><a href="./team.html" target="_blank">&lt;The_Team&gt;</a></li>-->
+                    <li><a href="./our_projects.html" target="_blank">&lt;Projects&gt;</a></li>
+                    <li><a href="./apply.html" target="_blank">&lt;Join_Us&gt;</a></li>
                 </ul>
-                
             </nav>
+        </div>
            
 
-    <h1 style="text-align: center; color: #2E488E;">Applications</h1>
-
+    <h1 style="position: relative; text-align: center; color: #2E488E; margin-top: 5%; margin-bottom: 50px;">Recruitment</h1>
 
     <div class="announcement">
-        <h3 style="font-size: 20px; letter-spacing: 0.05em; font-style: normal; font-weight: normal; font-size: 20px; line-height: 30px; color: #4C4C4C;">ANNOUNCEMENT</h3>
-        <p>&nbsp; &nbsp; &nbsp;Due to the pandemic and UCLA's decision to switch to online instruction, all DSU <br>&nbsp; &nbsp; &nbsp;operations will also be completely remote. We will have online recruitment and online <br>&nbsp; &nbsp; &nbsp;meetings. We will also be having online social events, like Netflex watch parties, for <br>&nbsp; &nbsp; &nbsp;members to hang out!</p>
+        <h3 style="font-size: 20px; font-style: normal; font-weight: normal; font-size: 20px; line-height: 30px; color: #4C4C4C;">ANNOUNCEMENT</h3>
+        <p>Due to the pandemic and UCLA's decision to switch to online instruction, all DSU operations will also be completely remote. We will have online recruitment and online meetings. We will also be having online social events for members to hang out!</p>
     </div>
 
     <br>
@@ -83,19 +77,13 @@
         </table>
     
 
-    <br>
-    <br>
-    <br>
-
-    
-    <h2 style = 'color: #344F99; margin-left: 10%;'>FAQs</h2>
-    <div>
+    <h2 style = 'position: relative; color: #344F99; margin-left: 10%; margin-top: 100px;'>FAQs</h2>
+    <div id="faqBox">
         <div class='faq1'>
             <img src='./Elements/applyPage/faqs_button.png' class='faq_button' id='faq1-click'>
             <p style='display: inline;'>I am living in a different time zone. Are there any accommodations?</p>
             <p id='faq1-answer'>We will ask for each member's availability before we finalize meeting times. We will try to make accommodations on a case-by-case basis, but we highly encourage every member to join our live meetings so we can get to know each other and continue building the community!</p>
         </div>
-    </div>
 
         <div class='faq2'>
             <img src='./Elements/applyPage/faqs_button.png' class='faq_button' id='faq2-click'>
@@ -114,28 +102,28 @@
             <p style='display: inline;'>How can I prepare for interviews?</p>
             <p id='faq4-answer'>Be yourself, and please bring your personality! Think about who you are, your values, your principles, and your goals.</p>
         </div>
+    </div>
 
         <footer>
-                <ul>
-                    <li class="text-left"><a class="text-white" href="./index.html">Home</a></li>
-                    <li class="text-left"><a class="text-white" href="./about.html">About Us</a></li>
-                    <li class="text-left"><a class="text-white" href="./team.html">The Team</a></li>
-                    <li class="text-left"><a class="text-white" href="./our_projects.html">Projects</a></li>
-                    <li class="text-left"><a class="text-white" href="./apply.html">Applications</a></li>
-                </ul>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <!--<li><a href="./team.html">The Team</a></li>-->
+                <li><a href="./about.html">Projects</a></li>
+                <li><a href="./apply.html">Join Us</a></li>
+            </ul>
     
-                <div class="contact">
-                    <h2>&gt; Contact Us</h2>
-                    <p>[1] email: (ucladsu@gmail.com) </p>
-                </div>
+            <div id="contact">
+                <h2>&gt; Contact Us</h2>
+                <p>[1] email: ucladsu@gmail.com </p>
+            </div>
     
-                <ul class="social">
-                    <li><a href="https://www.instagram.com/dsuatucla/" target="_blank"><img src="./Elements/landingPage/ig_logo.png" alt="Instagram" style = "width:50px; height:50px; border:0; border-radius: 100%;"> </a></li>
-                     <li><a href="https://www.linkedin.com/company/the-data-science-union-at-ucla/"> <img src="./Elements/landingPage/linkedin_logo.png" alt="LinkedIn" style = "width:50px; height:50px; border:0; border-radius: 100%;"></a></li>
-                     <li><a href="https://www.facebook.com/DSUatUCLA/" target="_blank"><img src="./Elements/landingPage/facebook_logo.png" alt="Facebook" style = "width:50px; height:50px; border:0; border-radius: 100%;"></a></li>
-                 </ul>
-                
-            </footer>
-            <script src='script.js'></script>
+            <ul id="social">
+               <li><a href="https://www.instagram.com/dsuatucla/" target="_blank"><img src="./Elements/landingPage/ig_logo.png" alt="Instagram" style = "width:50px; height:50px; border:0; border-radius: 100%;"> </a></li>
+                <li><a href="https://www.linkedin.com/company/the-data-science-union-at-ucla/" target="_blank"> <img src="./Elements/landingPage/linkedin_logo.png" alt="LinkedIn" style = "width:50px; height:50px; border:0; border-radius: 100%;"></a></li>
+                <li><a href="https://www.facebook.com/DSUatUCLA/" target="_blank"><img src="./Elements/landingPage/facebook_logo.png" alt="Facebook" style = "width:50px; height:50px; border:0; border-radius: 100%;"></a></li>
+                <p>Copyright © 2020 Data Science Union.<br>All rights reserved.</p>
+            </ul>
+        </footer>
     </body>
 </html>

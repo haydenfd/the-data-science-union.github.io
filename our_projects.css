@@ -1,0 +1,278 @@
+body{
+    margin: 0px;
+    background: linear-gradient(180deg, #FFFFFF 32.81%, #E0ECFE 100%);
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 156%;
+    letter-spacing: 0.05em;
+  }
+    
+  /*
+   #     # #######    #    ######  ####### ######  
+   #     # #         # #   #     # #       #     # 
+   #     # #        #   #  #     # #       #     # 
+   ####### #####   #     # #     # #####   ######  
+   #     # #       ####### #     # #       #   #   
+   #     # #       #     # #     # #       #    #  
+   #     # ####### #     # ######  ####### #     #                                               
+  */
+  #header {
+    position: relative;
+    width: 100%;
+  }
+    
+  #header .column {
+    position: relative;
+    float: left;
+  }
+    
+  #header .column.left{
+    width: 30%;
+  }
+    
+  #header .column.right{
+    width: 70%;
+    text-align: right;
+  }
+    
+  #logo_dsu {
+    position: relative;
+    left: 50px;
+    top: 40px;
+    width: 200px;
+  }
+    
+  #navbar {
+    position: relative;
+    display: inline-block;
+    top: 30px;  
+    padding-left: 150px;
+    padding-right: 100px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid;
+  }
+    
+  #navbar li{
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+    
+  #navbar a {
+    text-decoration:none;
+    font-size: 18px;
+    color: #4C4C4C;
+    letter-spacing: 0.02em;
+    transition-property: background-color;
+    transition-duration: 1.5s;
+  }
+    
+  #navbar a:hover {
+    color: #F3A47D;
+  }
+    
+  #header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+    
+  /*
+   ####### ####### ####### ####### ####### ######  
+   #       #     # #     #    #    #       #     # 
+   #       #     # #     #    #    #       #     # 
+   #####   #     # #     #    #    #####   ######  
+   #       #     # #     #    #    #       #   #   
+   #       #     # #     #    #    #       #    #  
+   #       ####### #######    #    ####### #     # 
+  */
+    
+  footer {
+    position: relative;
+    background-color: #2E488E;
+    top: 300px;
+    height: 400px;
+    padding-left: 10%;
+  }
+    
+  footer ul {
+    padding: 0px;
+  }
+    
+  footer li {
+    display: inline-block;
+    padding-top: 50px;
+    padding-right: 50px;
+  }
+    
+  footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+    
+  footer #contact {
+    position: relative;
+    display: inline-block;
+    top: 150px;
+    color: #ffffff;
+  }
+    
+  footer #social {
+    margin: 0px;
+    margin-right: 10%;
+    text-align: right;
+  }
+  
+    
+  footer #social li{
+    padding-top: 0px;
+    padding-right: 15px;
+  }
+    
+  footer #social p {
+    color: #ffffff;
+  }
+  
+/*
+   ######  ######  #######       # #######       #  #####  #######  #####  
+   #     # #     # #     #       # #             # #     #    #    #     # 
+   #     # #     # #     #       # #             # #          #    #       
+   ######  ######  #     #       # #####         # #          #     #####  
+   #       #   #   #     # #     # #       #     # #          #          # 
+   #       #    #  #     # #     # #       #     # #     #    #    #     # 
+   #       #     # #######  #####  #######  #####   #####     #     #####  
+                                                                               
+*/
+
+.project-grid {
+  column-count: 2;
+  margin-left: 10%;
+  color: white;
+  text-align: center;
+}
+
+.project-grid p {
+    position: relative;
+    z-index: 1;
+    letter-spacing: 0.05em;
+    font-size: 1.125em;
+    font-weight: bold;
+    padding: 6% 0%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.project-description {
+    position: relative;
+    opacity: 0;
+    z-index: 1;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    font-size: 16px;
+    transition: 0.7 ease;
+    text-align: center;
+}
+
+.project-1 {
+    position: relative;
+    display: inline-block;
+ background-image: url("Elements/projectsPage/music_project.png");
+ width: 475px;
+ height: 296px;
+ background-size: cover; 
+ filter: drop-shadow(0px 4px 20px #E2ECFE); 
+ border-radius: 26px;
+ transition: 0.5s ease;
+ backface-visibility: hidden; 
+ opacity: 1; 
+}
+
+.project-1:after {
+    content:"";
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-image: url("Elements/projectsPage/music_project.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity:0;
+    border-radius: 26px;
+    transition:opacity .5s ease;
+}
+
+.project-1:hover:after {
+    opacity: 0.5;
+    background: #344F99;
+    border-radius: 26px;
+    cursor: pointer;
+}
+
+.project-1 img {
+    display: block;
+}
+
+.project-1:hover .project-description {
+    position: relative;
+    opacity: 1;
+    z-index: 1;
+    color: white;
+    font-size: 16px;
+    transition: 0.7 ease;
+    text-align: center;
+}
+
+
+.project-2 {
+  width: 475px;
+  height: 296px;
+  background-image: url('./Elements/projectsPage/baseball_project.png');
+  background-size: cover;
+ filter: drop-shadow(0px 4px 20px #E2ECFE); 
+  border-radius: 26px;
+  
+  
+ /* backface-visibility: hidden;*/
+
+  
+}
+
+.project-2:hover {
+  /* background: rgba(0,154,166,0.5); */
+  background: rgba(52, 79, 153, 1); 
+  background-image: url('./Elements/projectsPage/baseball_project.png');
+  /* background: #344F99; */
+  cursor: pointer;
+  z-index: 1;
+  transition-property: opacity;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    opacity: 1;
+  
+}
+
+.project-2:hover .project-description {
+  opacity: 1;
+  z-index: 1;
+}
+
+.link-spanner {
+  position: absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+
+  z-index: 1;
+
+  /* fixes overlap error in IE7/8, 
+     make sure you have an empty gif */
+  /* background-image: url('./Elements/projectsPage/baseball_project.png'); */
+}
