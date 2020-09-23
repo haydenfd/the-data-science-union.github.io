@@ -11,7 +11,7 @@
     
     <body>
             <nav class="navbar">
-                    <a href="./index.html"> <img id='logo_dsu' src="./Elements/Landing Page/logo_dsu.png"></a>
+                    <a href="./index.html"> <img id='logo_dsu' src="./Elements/landingPage/logo_dsu.png"></a>
                 <ul> 
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     <li><a href="./about.html" target="_blank">&lt;About_Us&gt;</a></li>
@@ -22,7 +22,7 @@
                     &nbsp; &nbsp;
                     <li><a href="./apply.html" target="_blank">&lt;Applications&gt;</a></li>
                     &nbsp; &nbsp;
-                    <img id="navbar-line" src='./Elements/Landing Page/navbar_line.png'>
+                    <img id="navbar-line" src='./Elements/landingPage/navbar_line.png'>
                 </ul>
                 
             </nav>
@@ -38,11 +38,6 @@
 
     <br>
     <br>
-<!--
-        <div style='border-top: 6px solid #C4C4C4; width: 30%; transform: rotate(90deg);'>
-
-        </div>
-    -->
         <h2 class='timeline-title'>Recruitment Timeline</h2>
         <table class='timeline-row'>
                 <tr>
@@ -96,24 +91,28 @@
     <h2 style = 'color: #344F99; margin-left: 10%;'>FAQs</h2>
     <div>
         <div class='faq1'>
-            <img src='./Elements/applyPage/faqs_button.png' class='faq_button'>
+            <img src='./Elements/applyPage/faqs_button.png' class='faq_button' id='faq1-click'>
             <p style='display: inline;'>I am living in a different time zone. Are there any accommodations?</p>
+            <p id='faq1-answer'>We will ask for each member's availability before we finalize meeting times. We will try to make accommodations on a case-by-case basis, but we highly encourage every member to join our live meetings so we can get to know each other and continue building the community!</p>
         </div>
     </div>
 
         <div class='faq2'>
-            <img src='./Elements/applyPage/faqs_button.png' class='faq_button'>
+            <img src='./Elements/applyPage/faqs_button.png' class='faq_button' id='faq2-click'>
             <p style='display: inline;'>What does DSU look for in their applicants?</p>
+            <p id='faq2-answer'>For prospective members, we are looking for students who are passionate about developing their technical skills alongside like-minded peers and want to answer questions about our world through an evidence-based, data-driven method.</p>
         </div>
 
         <div class='faq3'>
-            <img src='./Elements/applyPage/faqs_button.png' class='faq_button'>
+            <img src='./Elements/applyPage/faqs_button.png' class='faq_button' id='faq3-click'>
             <p style='display: inline;'>What skills is DSU expecting? Do I need to take certain classes to be prepared?</p>
+            <p id='faq3-answer'>We recommend that prospective members have some experience with data analysis or statistical programming. However, we don't expect you to know everything because we will train you in preparation for data projects!</p>
         </div>
 
         <div class='faq4'>
-            <img src='./Elements/applyPage/faqs_button.png' class='faq_button' style='justify-content: left;'>
+            <img src='./Elements/applyPage/faqs_button.png' class='faq_button' id='faq4-click' style='justify-content: left;'>
             <p style='display: inline;'>How can I prepare for interviews?</p>
+            <p id='faq4-answer'>Be yourself, and please bring your personality! Think about who you are, your values, your principles, and your goals.</p>
         </div>
 
         <footer>
@@ -137,5 +136,6 @@
                  </ul>
                 
             </footer>
+            <script src='script.js'></script>
     </body>
 </html>
