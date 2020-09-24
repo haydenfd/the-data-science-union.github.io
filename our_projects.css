@@ -226,6 +226,7 @@ body{
     font-size: 16px;
     transition: 0.7 ease;
     text-align: center;
+    cursor: pointer;
 }
 
 
