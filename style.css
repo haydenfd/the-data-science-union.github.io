@@ -580,9 +580,14 @@ footer .contact {
 }
 
 
-
 /* Media Queries */
+@media screen and (max-width: 767px) {
+  .navbar a {
+    display: block;
+  }
 
+  
+}
 
 
 
