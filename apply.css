@@ -148,7 +148,7 @@ body{
                                                       
   */
   .announcement {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     margin-bottom: 1em;
     justify-content: center;
@@ -166,17 +166,18 @@ body{
     font-weight: 600;
     font-size: 35px;
     line-height: 48px;
-    margin-left: 7%;
+    margin-left: 10%;
     margin-top: 100px;
     margin-bottom: 50px;
   }
   
   .timeline-row {
-    margin: 0 auto;
     width: 75%;
     border-spacing: 0px;
     text-align: left;
-    /*border-left: 6px solid #C4C4C4; */
+    margin: 0% 12.5%;
+    padding-left: 5%;
+    border-left: 6px solid #C4C4C4;
   }
   
   .timeline-description {
