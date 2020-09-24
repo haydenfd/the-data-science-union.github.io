@@ -1,9 +1,26 @@
+body{
+  margin: 0px;
+  background: linear-gradient(180deg, #FFFFFF 32.81%, #E0ECFE 100%);
+  background-attachment: fixed;
+  font-family: ‘Open Sans’, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 156%;
+  letter-spacing: 0.05em;
+}
+
+
 
 /* Landing Page */
+
+/*
 body{
   background: linear-gradient(180deg, #FFFFFF 32.81%, #E0ECFE 100%);
   font-family: 'Open Sans'
 }
+*/
+
 .page_name {
   font-family: 'Open Sans', sans-serif;
   color: darkblue;
@@ -540,8 +557,9 @@ footer .contact {
   
 }
 
-#faq1-click-transform {
-  transform: rotate()
+#faq1-rotate {
+  display: none;
+  cursor: pointer;
 }
 
 #faq1-answer {
