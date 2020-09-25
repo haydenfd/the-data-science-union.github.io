@@ -93,7 +93,7 @@ body{
   footer {
     position: relative;
     background-color: #2E488E;
-    top: 300px;
+    top: 200px;
     height: 400px;
     padding-left: 10%;
   }
@@ -215,7 +215,7 @@ body{
     position: relative;
   }
   
-  .faq1, .faq2, .faq3, .faq4 {
+  .faq1, .faq2, .faq3, .faq4, .faq5 {
     position: relative;
     display: inline-block;
     border: 1px solid #537ABB;
@@ -225,37 +225,32 @@ body{
     margin-bottom: 1%;
     color: #4C4C4C;
     text-align: right;
-    padding: 1% 2%;
+    padding: 1% 15px;
     margin-right: 10%;
     float: right;
   }
-  
-  .faq_button {
+
+  .faq1 div, .faq2 div, .faq3 div, .faq4 div, .faq5 div{
+    float: left;
     display: inline-block;
+  }
+
+  .faq1 p, .faq2 p, .faq3 p, .faq4 p, .faq5 p {
+    display: inline-block;
+  }
+
+  .faq_button {
     height: 32px;
+  }
+
+  .faq1 img, .faq2 img, .faq3 img, .faq4 img, .faq5 img {
+    display: inline-block;
     cursor: pointer;
     float: left;
     margin-right: 100px;
   }
 
-  #faq1-click-transform {
-    transform: rotate()
-  }
-  
-  #faq1-answer {
-    display: none;
-  }
-  
-  
-  #faq2-answer {
-    display: none;
-  }
-  
-  #faq3-answer {
-    display: none;
-  }
-  
-  #faq4-answer {
+  #faq1-answer, #faq2-answer, #faq3-answer, #faq4-answer, #faq5-answer {
     display: none;
   }
 
@@ -263,4 +258,4 @@ body{
     content: "";
     display: table;
     clear: both;
-}
+  }
