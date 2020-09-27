@@ -23,71 +23,61 @@ let close_5 = document.getElementById('faq5-rotate');
 let open_1 = function() {
     moreInfo_1.style.display = 'inline-block';
     close_1.style.display = 'inline-block';
-    q1.style.position = "absolute";
-    q1.style.right = "15px";
+    q1.style.color = "#537ABB";
     view_1.style.display = 'none';
 }
 let hide_1 = function() {
     moreInfo_1.style.display = 'none';
     close_1.style.display = 'none';
-    q1.style.position = "relative";
-    q1.style.right = "0px";
+    q1.style.color = "#4C4C4C";
     view_1.style.display = 'block';
 }
 let open_2 = function() {
     moreInfo_2.style.display = 'inline-block';
     close_2.style.display = 'inline-block';
-    q2.style.position = "absolute";
-    q2.style.right = "15px";
+    q2.style.color = "#537ABB";
     view_2.style.display = 'none';
 }
 let hide_2 = function() {
     moreInfo_2.style.display = 'none';
     close_2.style.display = 'none';
-    q2.style.position = "relative";
-    q2.style.right = "0px";
+    q2.style.color = "#4C4C4C";
     view_2.style.display = 'block';
 }
 let open_3 = function() {
     moreInfo_3.style.display = 'inline-block';
     close_3.style.display = 'inline-block';
-    q3.style.position = "absolute";
-    q3.style.right = "15px";
+    q3.style.color = "#537ABB";
     view_3.style.display = 'none';
 }
 let hide_3 = function() {
     moreInfo_3.style.display = 'none';
     close_3.style.display = 'none';
-    q3.style.position = "relative";
-    q3.style.right = "0px";
+    q3.style.color = "#4C4C4C";
     view_3.style.display = 'block';
 }
 let open_4 = function() {
     moreInfo_4.style.display = 'inline-block';
     close_4.style.display = 'inline-block';
-    q4.style.position = "absolute";
-    q4.style.right = "15px";
+    q4.style.color = "#537ABB";
     view_4.style.display = 'none';
 }
 let hide_4 = function() {
     moreInfo_4.style.display = 'none';
     close_4.style.display = 'none';
-    q4.style.position = "relative";
-    q4.style.right = "0px";
+    q4.style.color = "#4C4C4C";
     view_4.style.display = 'block';
 }
 let open_5 = function() {
     moreInfo_5.style.display = 'inline-block';
     close_5.style.display = 'inline-block';
-    q5.style.position = "absolute";
-    q5.style.right = "15px";
+    q5.style.color = "#537ABB";
     view_5.style.display = 'none';
 }
 let hide_5 = function() {
     moreInfo_5.style.display = 'none';
     close_5.style.display = 'none';
-    q5.style.position = "relative";
-    q5.style.right = "0px";
+    q5.style.color = "#4C4C4C";
     view_5.style.display = 'block';
 }
 // Calls

@@ -9,6 +9,27 @@ body{
   line-height: 156%;
   letter-spacing: 0.05em;
 }
+
+#loading {
+  background: #FFFFFF;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+#loading img {
+  width: 5%;
+  padding-right: 10px;
+}
+
   
 /*
  #     # #######    #    ######  ####### ######  
@@ -96,6 +117,7 @@ footer {
   top: 400px;
   height: 400px;
   padding-left: 10%;
+  
 }
   
 footer ul {
@@ -152,6 +174,7 @@ footer #social p {
   top: 30px;
 }
 
+
 #aboutUs img {
   width: 100%;
 }
@@ -161,7 +184,7 @@ footer #social p {
   left: 10%;
   top: 10%;
   font-weight: 600;
-  font-size: 60px;
+  font-size: 3.75em;
   line-height: 82px;
   letter-spacing: 0.03em;
   color: #344F99;
@@ -176,6 +199,7 @@ footer #social p {
   line-height: 48px;
   text-align: center;
   color: #FF925B; 
+  width: 35%;
 }
 
 section {
@@ -199,7 +223,7 @@ section p {
 #curriculum {
   position: relative;
   display: inline-block;
-  left: 18%;
+  margin-left: 18%;
   padding-left: 2%;
   font-weight: normal;
   color: #4C4C4C;
@@ -209,7 +233,7 @@ section p {
 #projects {
   position: relative;
   display: inline-block;
-  left: 8%;
+  margin-left: 8%;
   padding-top: 10%;
   padding-left: 2%;
   font-weight: normal;
@@ -220,10 +244,93 @@ section p {
 #professional-development {
   position: relative;
   display: inline-block;
-  left: 8%;
+  margin-left: 8%;
   padding-top: 10%;
   padding-left: 2%;
   font-weight: normal;
   color: #4C4C4C;
   border-left: 2px solid #FF925B;
+}
+
+.dropdown {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  #nav-button {
+    display: block;
+    float: right;
+    cursor: pointer;
+    margin-top: 10%;
+    margin-right: 10%;
+    width: 70%;
+    height: auto;
+  }
+
+  .dropdown {
+    display: block;
+  }
+  
+  .btn {
+    width: 10%;
+    float: right;
+    margin-top: 5%;
+    margin-right: 5%;
+    height: auto;
+  }
+
+  .column.right{
+    display: none;
+  }
+
+  
+  #aboutUs {
+    margin-top: 15%;
+  }
+
+  #aboutUs h1 {
+    left: 40%;
+    font-size: 2.8em;
+    top: -20%;
+  }
+
+  #aboutUs img {
+    width: 100%;
+  }
+
+  #aboutUs h2 {
+    width: 60%;
+    left: 30%;
+    top: 110%;
+  }
+
+  #curriculum {
+    margin-top: 30%;
+  }
+
+  footer {
+    position: relative;
+  }
+
+  .footer-nav{
+    display: block;
+    position: relative;
+  }
+
+  footer #contact {
+    top: 5%;
+    position: relative;
+    float: left;
+  }
+
+  #social {
+    float: left;
+    top: 30%;
+    left: 5%;
+    position: relative;
+  }
+  
+  #social p {
+    display: none;
+  }
 }

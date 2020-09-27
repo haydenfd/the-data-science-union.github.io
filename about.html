@@ -3,29 +3,54 @@
 <html>
     <head>
         <title>About Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="logo_bear.png">
         <link href="about.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
 
     <body>
+        <script>
+            $(window).on("load", function(){
+                $("#loading").fadeOut("slow");
+            });
+        </script>
+        <div id="loading">
+            <img  src="loading_sign.jpg">
+            <p>Loading...</p>
+        </div>
         <div id="header">
             <a class="column left" href="./index.html"> <img id="logo_dsu" src="Elements/landingPage/logo_dsu.png"></a>
+
+            <div class="dropdown">
+                <button type="button" class="btn" data-toggle="dropdown">
+                    <img src='./Elements/landingPage/mobile_nav.png' id='nav-button'>
+                </button>
+                <div class="dropdown-menu">
+                    <a class='dropdown-item' href="./about.html" style="color: #F3A47D;">&lt;About Us&gt;</a>
+                    <a class='dropdown-item' href="./our_projects.html">&lt;Projects&gt;</a>
+                    <a class='dropdown-item' href="./apply.html">&lt;Join Us&gt;</a>
+                </div>
+              </div>
+
             <nav class="column right">
                 <ul id="navbar">
-                    <li><a href="./about.html">&lt;About_Us&gt;</a></li>
+                    <li><a href="./about.html" style="color: #F3A47D;">&lt;About Us&gt;</a></li>
                     <!--<li><a href="./team.html" target="_blank">&lt;The_Team&gt;</a></li>-->
                     <li><a href="./our_projects.html">&lt;Projects&gt;</a></li>
-                    <li><a href="./apply.html">&lt;Join_Us&gt;</a></li>
+                    <li><a href="./apply.html">&lt;Join Us&gt;</a></li>
                 </ul>
             </nav>
         </div>
 
         <div id="aboutUs">
-            <h1>{About_Us}</h1>
+            <h1>{About Us}</h1>
             <img src="./Elements/aboutUsPage/aboutUs.png"> 
-            <h2>Cultivating a thriving <br>community of data science <br>professionals at UCLA</h2>
+            <h2>Cultivating a thriving community of data science professionals at UCLA</h2>
         </div>
 
         <section>
@@ -52,11 +77,11 @@
 
         <footer>
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About Us</a></li>
+                <li class='footer-nav'><a href="./index.html">Home</a></li>
+                <li class='footer-nav'><a href="./about.html" style="color: #F3A47D;">About Us</a></li>
                 <!--<li><a href="./team.html">The Team</a></li>-->
-                <li><a href="./our_projects.html">Projects</a></li>
-                <li><a href="./apply.html">Join Us</a></li>
+                <li class='footer-nav'><a href="./our_projects.html">Projects</a></li>
+                <li class='footer-nav'><a href="./apply.html">Join Us</a></li>
             </ul>
     
             <div id="contact">

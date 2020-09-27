@@ -113,6 +113,10 @@ body{
     text-decoration: none;
     font-weight: 600;
   }
+
+  footer a:hover {
+    color: #F3A47D;
+  }
     
   footer #contact {
     position: relative;
@@ -152,8 +156,10 @@ body{
     margin: 0 auto;
     margin-bottom: 1em;
     justify-content: center;
-    background-color: rgba(224, 236, 254, 0.46);
     padding: 30px 20px 50px 20px;
+    background: #F1F6FF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
   }
 
   .announcement p {
@@ -220,7 +226,7 @@ body{
     display: inline-block;
     border: 1px solid #537ABB;
     box-sizing: border-box;
-    max-width: 80%;
+    width: 80%;
     right: 1%;
     margin-bottom: 1%;
     color: #4C4C4C;
@@ -230,13 +236,13 @@ body{
     float: right;
   }
 
-  .faq1 div, .faq2 div, .faq3 div, .faq4 div, .faq5 div{
-    float: left;
-    display: inline-block;
+  #q1, #q2, #q3, #q4, #q5 {
+    font-weight: 400; 
   }
 
   .faq1 p, .faq2 p, .faq3 p, .faq4 p, .faq5 p {
     display: inline-block;
+    margin: 0px;
   }
 
   .faq_button {
@@ -246,12 +252,11 @@ body{
   .faq1 img, .faq2 img, .faq3 img, .faq4 img, .faq5 img {
     display: inline-block;
     cursor: pointer;
-    float: left;
-    margin-right: 100px;
   }
 
   #faq1-answer, #faq2-answer, #faq3-answer, #faq4-answer, #faq5-answer {
     display: none;
+    margin: 10px 0px;
   }
 
   #faqBox:after {

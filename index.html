@@ -7,16 +7,27 @@
         <meta charset=“UTF-8”>
         <link href="landing.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    
     </head>
     <body>
+        <script>
+            $(window).on("load", function(){
+                $("#loading").fadeOut("slow");
+            });
+        </script>
+        <div id="loading">
+            <img  src="loading_sign.jpg">
+            <p>Loading...</p>
+        </div>
         <div id="header">
             <a class="column left" href="./index.html"> <img id="logo_dsu" src="./Elements/landingPage/logo_dsu.png"></a>
             <nav class="column right">
                 <ul id="navbar">
-                    <li><a href="./about.html">&lt;About_Us&gt;</a></li>
+                    <li><a href="./about.html">&lt;About Us&gt;</a></li>
                     <!--<li><a href="./team.html" target="_blank">&lt;The_Team&gt;</a></li>-->
                     <li><a href="./our_projects.html">&lt;Projects&gt;</a></li>
-                    <li><a href="./apply.html">&lt;Join_Us&gt;</a></li>
+                    <li><a href="./apply.html">&lt;Join Us&gt;</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,13 +38,13 @@
             <img id="landingImg" src='./Elements/landingPage/landing.png'>
         </main>
         <div id="landing_2">
-            <h2>Who_We_Are</h2>
+            <h2>Who We Are</h2>
             <p>The Data Science Union is a professional student organization founded in March of 2019. Our goal is to cultivate a thriving community of data science professionals at UCLA. The three components of our club prepare members for careers in data science: our self-designed curriculum, real-world projects, and professional development opportunities.</p>
         </div>
 
         <div id="landing_3">
-            <div class="column left">
-                <p id="checkProject" onclick="location.href='./our_projects.html'" value="Go to Google">Check out our recent projects! </p>
+            <div class="column left" onclick="location.href='./our_projects.html'">
+                <p id="checkProject">Check out our recent projects! </p>
                 <p id="arrow">&gt; </p>
             </div>
             <div class="column right">
@@ -49,7 +60,7 @@
         <div id="landing_4">
             <div class="column left"><img src = './Elements/landingPage/zoom_laptop.png'></div>
             <div class='column right zoom-description'>
-                <h2>We_Are_Moving_Online!</h2>
+                <h2>We Are Moving Online!</h2>
                 <p id="onlineText">We can’t meet in person, but we still want to see you! In Fall 2020, we will conduct online recruitment, and all club operations will be online. Please check out our timeline and frequently asked questions below!</p>
                 <button onclick="location.href='./apply.html'">Interested in Joining?</button>
             </div>
@@ -57,7 +68,7 @@
 
         <footer>
             <ul>
-                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html" style="color: #F3A47D;">Home</a></li>
                 <li><a href="./about.html">About Us</a></li>
                 <!--<li><a href="./team.html">The Team</a></li>-->
                 <li><a href="./our_projects.html">Projects</a></li>
@@ -76,5 +87,6 @@
                 <p>Copyright © 2020 Data Science Union.<br>All rights reserved.</p>
             </ul>
         </footer>
+
     </body>
 </html>
