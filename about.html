@@ -11,12 +11,24 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <noscript>Please enable javascript to view the page content.</noscript>
     </head>
 
     <body>
         <div id="loading">
-            <img  src="loading_sign.jpg">
-            <p>Loading...</p>
+            <div class="sk-cube-grid">
+                <img class="sk-cube sk-cube1" src="Elements/loader/Polygon 2.png">
+                <img class="sk-cube sk-cube2" src="Elements/loader/Polygon 11.png">
+                <img class="sk-cube sk-cube3" src="Elements/loader/Polygon 10.png">
+                <img class="sk-cube sk-cube4" src="Elements/loader/Polygon 9.png">
+                <img class="sk-cube sk-cube5" src="Elements/loader/Polygon 8.png">
+                <img class="sk-cube sk-cube6" src="Elements/loader/Polygon 7.png">
+                <img class="sk-cube sk-cube7" src="Elements/loader/Polygon 6.png">
+                <img class="sk-cube sk-cube8" src="Elements/loader/Polygon 5.png">
+                <img class="sk-cube sk-cube9" src="Elements/loader/Polygon 4.png">
+                <img class="sk-cube sk-cube10" src="Elements/loader/Polygon 3.png">
+                <img class="sk-cube sk-cube11" src="Elements/loader/Polygon 1.png">
+              </div>
         </div>
         <div id="header">
             <a class="column left" href="./index.html"> <img id="logo_dsu" src="Elements/landingPage/logo_dsu.png"></a>
@@ -58,7 +70,7 @@
                         <p>Projects are an opportunity for members to work collaboratively, investigate meaningful questions, and draw insightful conclusions. Members will gain practical knowledge in applying the data science process, hands-on experience with working on a team, and get to know people in the club better. After participating in an internal project, members get to branch out and work with our professional partners on client projects.</p>
                         <span>
                             <div id='professional-development'>
-                                <h2>Professional_Development {</h2>         
+                                <h2>Professional Development {</h2>         
                                 <p> Since our ultimate goal is to serve as a pipeline towards careers in data science, we offer opportunities such as: networking events with working professionals, industry panels with data science experts, career strategy workshops focusing on the job search process, and professional connections with our alumni and client network.</p>
                                 <h2>}</h2>
                             </div>
@@ -92,9 +104,13 @@
             </ul>
         </footer>
         <script>
+
             $(window).on("load", function(){
+                setTimeout(function() {
                 $("#loading").fadeOut("slow");
-            });
+            }, 1000);
+            });  
+            
         </script>
     </body>
 </html>
