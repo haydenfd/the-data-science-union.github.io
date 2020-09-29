@@ -320,7 +320,7 @@ z-index: 1;
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 450px) and (max-width: 768px) {
+@media only screen and (min-width: 100px) and (max-width: 768px) {
   
   #nav-button {
 
