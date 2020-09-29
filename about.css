@@ -361,6 +361,10 @@ section p {
   display: none;
 }
 
+.dropdown-menu {
+  display: none;
+}
+
 @media only screen and (min-width: 100px) and (max-width: 1001px) and (orientation: portrait) {
   #nav-button {
     display: block;
@@ -376,6 +380,13 @@ section p {
     display: block;
   }
   
+  .dropdown-menu.show {
+    display: block;
+  }
+  .dropdown-item {
+    display: block;
+  }
+
   .btn {
     width: 10%;
     float: right;
