@@ -361,7 +361,7 @@ section p {
   display: none;
 }
 
-@media only screen and (min-width: 100px) and (max-width: 1001px) {
+@media only screen and (min-width: 100px) and (max-width: 1001px) and (orientation: portrait) {
   #nav-button {
     display: block;
     float: right;
