@@ -6,6 +6,7 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <link rel="shortcut icon" href="logo_bear.png">
                 <link href="./our_projects.css" type="text/css" rel="stylesheet">
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js'></script>
                 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
                 <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -15,6 +16,21 @@
         </head>
 
     <body>
+        <div id="loading">
+            <div class="sk-cube-grid"><!--
+                <img class="sk-cube sk-cube1" src="Elements/loader/Polygon 2.png">
+                <img class="sk-cube sk-cube2" src="Elements/loader/Polygon 11.png">
+                <img class="sk-cube sk-cube3" src="Elements/loader/Polygon 10.png">
+                <img class="sk-cube sk-cube4" src="Elements/loader/Polygon 9.png">
+                <img class="sk-cube sk-cube5" src="Elements/loader/Polygon 8.png">
+                <img class="sk-cube sk-cube6" src="Elements/loader/Polygon 7.png">
+                <img class="sk-cube sk-cube7" src="Elements/loader/Polygon 6.png">
+                <img class="sk-cube sk-cube8" src="Elements/loader/Polygon 5.png">
+                <img class="sk-cube sk-cube9" src="Elements/loader/Polygon 4.png">
+                <img class="sk-cube sk-cube10" src="Elements/loader/Polygon 3.png">
+                <img class="sk-cube sk-cube11" src="Elements/loader/Polygon 1.png">-->
+              </div>
+        </div>
         <div id="header">
             <a class="column left" href="./index.html"> <img id="logo_dsu" src="./Elements/landingPage/logo_dsu.png"></a>
 
@@ -91,5 +107,30 @@
                 <p>Copyright © 2020 Data Science Union.<br>All rights reserved.</p>
             </ul>
         </footer>
+        <script>
+            function phone() { // getter runs when you ask for the property
+                var md = new MobileDetect(window.navigator.userAgent);
+                return md.mobile() ? true : false;
+            }
+
+            $(document).ready(function() {
+
+                if (phone()) { // asking for subj.phone will detect phone
+                    $("#loading div").css("width", "80%");
+                    $("#loading div").html('It seems that you are using a touchscreen device or a phone. Please use a laptop or desktop instead to view the page content.<br><br>Sorry about the inconvenience!');
+                } else {
+                    $(window).on("load", function(){
+                        setTimeout(function() {
+                        $("#loading").fadeOut("slow");
+                        }, 0);
+                    }); /*
+                    $(window).on("load", function(){
+                        setTimeout(function() {
+                        $("#loading").fadeOut("slow");
+                        }, 3000);
+                    });  */
+                }
+            });
+        </script>
     </body>
 </html>

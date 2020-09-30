@@ -5,11 +5,29 @@
         <title>Join Us</title>
         <link rel="shortcut icon" href="logo_bear.png">
         <link href="./apply.css" type="text/css" rel="stylesheet">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
         <noscript>Please enable javascript to view the page content.</noscript>
+        <script src='script.js'></script>
     </head>
     
     <body>
+        <div id="loading">
+            <div class="sk-cube-grid"><!--
+                <img class="sk-cube sk-cube1" src="Elements/loader/Polygon 2.png">
+                <img class="sk-cube sk-cube2" src="Elements/loader/Polygon 11.png">
+                <img class="sk-cube sk-cube3" src="Elements/loader/Polygon 10.png">
+                <img class="sk-cube sk-cube4" src="Elements/loader/Polygon 9.png">
+                <img class="sk-cube sk-cube5" src="Elements/loader/Polygon 8.png">
+                <img class="sk-cube sk-cube6" src="Elements/loader/Polygon 7.png">
+                <img class="sk-cube sk-cube7" src="Elements/loader/Polygon 6.png">
+                <img class="sk-cube sk-cube8" src="Elements/loader/Polygon 5.png">
+                <img class="sk-cube sk-cube9" src="Elements/loader/Polygon 4.png">
+                <img class="sk-cube sk-cube10" src="Elements/loader/Polygon 3.png">
+                <img class="sk-cube sk-cube11" src="Elements/loader/Polygon 1.png">-->
+              </div>
+        </div>
         <div id="header">
             <a class="column left" href="./index.html"> <img id="logo_dsu" src="Elements/landingPage/logo_dsu.png"></a>
             <nav class="column right">
@@ -23,15 +41,15 @@
         </div>
            
 
-    <h1 style="position: relative; text-align: center; color: #2E488E; margin-top: 5%; margin-bottom: 50px;">Recruitment</h1>
+        <h1 style="position: relative; text-align: center; color: #2E488E; margin-top: 5%; margin-bottom: 50px;">Recruitment</h1>
 
-    <div class="announcement">
-        <h3 style="padding: 0px 10px; font-size: 20px; font-weight: normal; line-height: 30px; color: #4C4C4C;">ANNOUNCEMENT</h3>
-        <p>Due to the pandemic and UCLA's decision to switch to online instruction, all DSU operations will also be completely remote. We will have online recruitment and online meetings. We will also be having online social events for members to hang out!</p>
-    </div>
+        <div class="announcement">
+            <h3 style="padding: 0px 10px; font-size: 20px; font-weight: normal; line-height: 30px; color: #4C4C4C;">ANNOUNCEMENT</h3>
+            <p>Due to the pandemic and UCLA's decision to switch to online instruction, all DSU operations will also be completely remote. We will have online recruitment and online meetings. We will also be having online social events for members to hang out!</p>
+        </div>
 
-    <br>
-    <br>
+        <br>
+        <br>
         <h2 class='timeline-title'>Recruitment Timeline</h2>
         <table class='timeline-row'>
                 <tr style = 'background-color: #F1F6FF;'>
@@ -74,101 +92,100 @@
             </tr>
         </tbody>
         </table>
-    <h2 style = 'color: #344F99; margin-left: 10%; margin-top: 200px; margin-bottom: 50px;'>FAQ</h2>
-    <div id="faqBox">
-        <div class='faq1'>
-            <div>
-                <img src='./Elements/applyPage/faqs_button.png' class='faq_button' id='faq1-click' style='display: inline-block; left: 10px; position: relative; float: left;'>
+        <h2 style = 'color: #344F99; margin-left: 10%; margin-top: 200px; margin-bottom: 50px;'>FAQ</h2>
+        <div id="faqBox">
+            <div class='faq1'>
+                <div>
+                    <img src='./Elements/applyPage/faqs_button.png' class='faq_button' id='faq1-click' style='display: inline-block; left: 10px; position: relative; float: left;'>
+                </div>
+                <div>
+                    <img src='./Elements/applyPage/faqs_flipped.png' id='faq1-rotate' style='position: relative; float: left; left: 10px; display: none;'>
+                </div>
+                <div id="q1">
+                    <p>I am living in a different time zone. Are there any accommodations?</p>
+                </div>
+                <div>
+                <p id='faq1-answer' style='text-align: left; padding-left: 6%;'>We will ask for each member's availability before we finalize meeting times. We will try to make accommodations on a case-by-case basis, but we highly encourage every member to join our live meetings so we can get to know each other and continue building the community!</p>
+                </div>
             </div>
-            <div>
-                <img src='./Elements/applyPage/faqs_flipped.png' id='faq1-rotate' style='position: relative; float: left; left: 10px; display: none;'>
+            <div class='faq2'>
+                <div>
+                <img src='./Elements/applyPage/faqs_button.png' class='faq_button' id='faq2-click' style='display: inline-block; left: 10px; position: relative; float: left;'>
+                </div>
+                <div>
+                    <img src='./Elements/applyPage/faqs_flipped.png' id='faq2-rotate' style='position: relative; float: left; left: 10px; display: none;'>
+                </div>
+                <div id="q2">
+                    <p>What does DSU look for in their applicants?</p>
+                </div>
+                <div>
+                <p id='faq2-answer' style='text-align: left; padding-left: 6%;'>For prospective members, we are looking for students who are passionate about developing their technical skills alongside like-minded peers and want to answer questions about our world through an evidence-based, data-driven method.</p>
+                </div>
             </div>
-            <div id="q1">
-                <p>I am living in a different time zone. Are there any accommodations?</p>
+            <div class='faq3'>
+                <div style="display: inline-block; float: left;">
+                    <img src='./Elements/applyPage/faqs_button.png' class='faq_button' id='faq3-click' style='left: 10px; position: relative;'>
+                </div>
+                <div>
+                    <img src='./Elements/applyPage/faqs_flipped.png' id='faq3-rotate' style='position: relative; float: left; left: 10px; display: none;'>
+                </div>
+                <div id="q3">
+                    <p>What skills is DSU expecting? Do I need to take certain classes to be prepared?</p>
+                </div>
+                <div>
+                    <p id='faq3-answer' style='text-align: left; padding-left: 6%;'>We recommend that prospective members have some experience with data analysis or statistical programming. However, we don't expect you to know everything because we will train you in preparation for data projects!</p>
+                </div>
             </div>
-            <div>
-            <p id='faq1-answer' style='text-align: left; padding-left: 6%;'>We will ask for each member's availability before we finalize meeting times. We will try to make accommodations on a case-by-case basis, but we highly encourage every member to join our live meetings so we can get to know each other and continue building the community!</p>
+            <div class='faq4'>
+                <div>
+                    <img src='./Elements/applyPage/faqs_button.png' class='faq_button' id='faq4-click' style='display: inline-block; left: 10px; position: relative; float: left;'>
+                </div>
+                <div>
+                    <img src='./Elements/applyPage/faqs_flipped.png' id='faq4-rotate' style='position: relative; float: left; left: 10px; display: none;'>
+                </div>
+                <div id="q4">
+                    <p>Can I apply if I am an incoming freshman? Are there any major restrictions for applying?</p>
+                </div>
+                <div>
+                    <p id='faq4-answer' style='text-align: left; padding-left: 6%;'>No! We welcome people in difference years and from different backgrounds as long as they want to pursue a future in a data-related field.</p>  
+                </div>
             </div>
-        </div>
-        <div class='faq2'>
-            <div>
-            <img src='./Elements/applyPage/faqs_button.png' class='faq_button' id='faq2-click' style='display: inline-block; left: 10px; position: relative; float: left;'>
+            <div class='faq5'>
+                <div>
+                    <img src='./Elements/applyPage/faqs_button.png' class='faq_button' id='faq5-click' style='display: inline-block; left: 10px; position: relative; float: left;'>
+                </div>
+                <div>
+                    <img src='./Elements/applyPage/faqs_flipped.png' id='faq5-rotate' style='position: relative; float: left; left: 10px; display: none;'>
+                </div>
+                <div id="q5">
+                    <p>How can I prepare for interviews?</p>
+                </div>
+                <div>
+                    <p id='faq5-answer' style='text-align: left; padding-left: 6%;'>Be yourself, and please bring your personality! Think about who you are, your values, your principles, and your goals.</p>  
+                </div>
             </div>
-            <div>
-                <img src='./Elements/applyPage/faqs_flipped.png' id='faq2-rotate' style='position: relative; float: left; left: 10px; display: none;'>
-            </div>
-            <div id="q2">
-                <p>What does DSU look for in their applicants?</p>
-            </div>
-            <div>
-            <p id='faq2-answer' style='text-align: left; padding-left: 6%;'>For prospective members, we are looking for students who are passionate about developing their technical skills alongside like-minded peers and want to answer questions about our world through an evidence-based, data-driven method.</p>
-            </div>
-        </div>
-        <div class='faq3'>
-            <div style="display: inline-block; float: left;">
-                <img src='./Elements/applyPage/faqs_button.png' class='faq_button' id='faq3-click' style='left: 10px; position: relative;'>
-            </div>
-            <div>
-                <img src='./Elements/applyPage/faqs_flipped.png' id='faq3-rotate' style='position: relative; float: left; left: 10px; display: none;'>
-            </div>
-            <div id="q3">
-                <p>What skills is DSU expecting? Do I need to take certain classes to be prepared?</p>
-            </div>
-            <div>
-                <p id='faq3-answer' style='text-align: left; padding-left: 6%;'>We recommend that prospective members have some experience with data analysis or statistical programming. However, we don't expect you to know everything because we will train you in preparation for data projects!</p>
-            </div>
-        </div>
-        <div class='faq4'>
-            <div>
-                <img src='./Elements/applyPage/faqs_button.png' class='faq_button' id='faq4-click' style='display: inline-block; left: 10px; position: relative; float: left;'>
-            </div>
-            <div>
-                <img src='./Elements/applyPage/faqs_flipped.png' id='faq4-rotate' style='position: relative; float: left; left: 10px; display: none;'>
-            </div>
-            <div id="q4">
-                <p>Can I apply if I am an incoming freshman? Are there any major restrictions for applying?</p>
-            </div>
-            <div>
-                <p id='faq4-answer' style='text-align: left; padding-left: 6%;'>No! We welcome people in difference years and from different backgrounds as long as they want to pursue a future in a data-related field.</p>  
-            </div>
-        </div>
-        <div class='faq5'>
-            <div>
-                <img src='./Elements/applyPage/faqs_button.png' class='faq_button' id='faq5-click' style='display: inline-block; left: 10px; position: relative; float: left;'>
-            </div>
-            <div>
-                <img src='./Elements/applyPage/faqs_flipped.png' id='faq5-rotate' style='position: relative; float: left; left: 10px; display: none;'>
-            </div>
-            <div id="q5">
-                <p>How can I prepare for interviews?</p>
-            </div>
-            <div>
-                <p id='faq5-answer' style='text-align: left; padding-left: 6%;'>Be yourself, and please bring your personality! Think about who you are, your values, your principles, and your goals.</p>  
-            </div>
-        </div>
 
-    </div>
-    <footer>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <!--<li><a href="./team.html">The Team</a></li>-->
-            <li><a href="./our_projects.html">Projects</a></li>
-            <li><a href="./apply.html" style="color: #F3A47D;">Join Us</a></li>
-        </ul>
-
-        <div id="contact">
-            <h2>&gt; Contact Us</h2>
-            <p>[1] email: ucladsu@gmail.com </p>
         </div>
+        <footer>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <!--<li><a href="./team.html">The Team</a></li>-->
+                <li><a href="./our_projects.html">Projects</a></li>
+                <li><a href="./apply.html" style="color: #F3A47D;">Join Us</a></li>
+            </ul>
 
-        <ul id="social">
-           <li><a href="https://www.instagram.com/dsuatucla/" target="_blank"><img src="./Elements/landingPage/ig_logo.png" alt="Instagram" style = "width:50px; height:50px; border:0; border-radius: 100%;"> </a></li>
-            <li><a href="https://www.linkedin.com/company/the-data-science-union-at-ucla/" target="_blank"> <img src="./Elements/landingPage/linkedin_logo.png" alt="LinkedIn" style = "width:50px; height:50px; border:0; border-radius: 100%;"></a></li>
-            <li><a href="https://www.facebook.com/DSUatUCLA/" target="_blank"><img src="./Elements/landingPage/facebook_logo.png" alt="Facebook" style = "width:50px; height:50px; border:0; border-radius: 100%;"></a></li>
-            <p>Copyright © 2020 Data Science Union.<br>All rights reserved.</p>
-        </ul>
-    </footer>
-            <script src='script.js'></script>
+            <div id="contact">
+                <h2>&gt; Contact Us</h2>
+                <p>[1] email: ucladsu@gmail.com </p>
+            </div>
+
+            <ul id="social">
+            <li><a href="https://www.instagram.com/dsuatucla/" target="_blank"><img src="./Elements/landingPage/ig_logo.png" alt="Instagram" style = "width:50px; height:50px; border:0; border-radius: 100%;"> </a></li>
+                <li><a href="https://www.linkedin.com/company/the-data-science-union-at-ucla/" target="_blank"> <img src="./Elements/landingPage/linkedin_logo.png" alt="LinkedIn" style = "width:50px; height:50px; border:0; border-radius: 100%;"></a></li>
+                <li><a href="https://www.facebook.com/DSUatUCLA/" target="_blank"><img src="./Elements/landingPage/facebook_logo.png" alt="Facebook" style = "width:50px; height:50px; border:0; border-radius: 100%;"></a></li>
+                <p>Copyright © 2020 Data Science Union.<br>All rights reserved.</p>
+            </ul>
+        </footer>
 </body>
 </html>
