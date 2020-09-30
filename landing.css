@@ -527,6 +527,12 @@ footer #social p {
   color: #FFE4A3;
 }
 
+#landing_4:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /*
 
  #     # ####### ######  ### #       #######    #     # ####### ######   #####  ### ####### #     # 
@@ -538,12 +544,6 @@ footer #social p {
  #     # ####### ######  ### ####### #######       #    ####### #     #  #####  ### ####### #     # 
                                                                                                     
 */
-
-#landing_4:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .dropdown {
   display: none;
