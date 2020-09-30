@@ -125,11 +125,12 @@
                 var md = new MobileDetect(window.navigator.userAgent);
                 return md.mobile() ? true : false;
             }
-
+           
             $(document).ready(function() {
 
                 if (phone()) { // asking for subj.phone will detect phone
-                    $("#loading").html('It seems that you are using a touchscreen device or a phone. Please use a laptop or desktop instead to view the page content.');
+                    $("#loading div").css("width", "80%");
+                    $("#loading div").html('It seems that you are using a touchscreen device or a phone. Please use a laptop or desktop instead to view the page content.');
                 } else {
                     $(window).on("load", function(){
                         setTimeout(function() {
