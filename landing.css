@@ -1,4 +1,6 @@
-body{
+html {
+  overflow-x: hidden;
+}body{
   margin: 0px;
   background: linear-gradient(180deg, #FFFFFF 32.81%, #E0ECFE 100%);
   background-attachment: fixed;
@@ -525,8 +527,168 @@ footer #social p {
   color: #FFE4A3;
 }
 
+/*
+
+ #     # ####### ######  ### #       #######    #     # ####### ######   #####  ### ####### #     # 
+ ##   ## #     # #     #  #  #       #          #     # #       #     # #     #  #  #     # ##    # 
+ # # # # #     # #     #  #  #       #          #     # #       #     # #        #  #     # # #   # 
+ #  #  # #     # ######   #  #       #####      #     # #####   ######   #####   #  #     # #  #  # 
+ #     # #     # #     #  #  #       #           #   #  #       #   #         #  #  #     # #   # # 
+ #     # #     # #     #  #  #       #            # #   #       #    #  #     #  #  #     # #    ## 
+ #     # ####### ######  ### ####### #######       #    ####### #     #  #####  ### ####### #     # 
+                                                                                                    
+*/
+
 #landing_4:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.dropdown {
+  display: none;
+}
+
+.dropdown-menu {
+  display: none;
+}
+/*
+#menu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 100%;
+  
+  height: 100vh;
+  background-color: #344F99;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 300ms all;
+}
+
+#menu.open {
+  left: 0;
+}
+*/
+
+@media only screen and (min-width: 100px) and (max-width: 1001px) {
+  #nav-button {
+    display: block;
+    float: right;
+    cursor: pointer;
+    margin-top: 10%;
+    margin-right: 10%;
+    width: 70%;
+    height: auto;
+  }
+
+  #logo_dsu {
+    width: 90%;
+  }
+
+  .dropdown{
+    display: block;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+  }
+
+  .dropdown button {
+    border: none;
+    background-color: white;
+  }
+
+  .dropdown-item {
+    display: block;
+  }
+  
+  .btn {
+    width: 10%;
+    float: right;
+    margin-top: 5%;
+    margin-right: 5%;
+    height: auto;
+  }
+
+  .column.right{
+    display: none;
+  }
+
+  #landing #dsu {
+    font-size: 2em;
+  }
+  #landing #ucla {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  #landing p {
+    text-align: center;
+  }
+
+  #landingImg {
+    margin-top: 45%;
+  }
+
+  #landing_2 {
+    margin-bottom: 0;
+  }
+
+  #landing_3 {
+    margin-top: 0;
+  }
+
+  #landing_3 .column.right {
+    display: block;
+    margin: 0;
+    width: 90%;
+    left: 5%;
+  }
+
+  #landing_3 .column.left {
+    display: block;
+    margin: 0;
+    width: 90%;
+  }
+
+  #landing_4 .column.left {
+    width: 90%;
+  }
+
+  #landing_4 .column.right{
+    display: block;
+    margin: 0;
+    width: 90%;
+  }
+
+  footer {
+    position: relative;
+  }
+
+  .footer-nav{
+    display: block;
+    position: relative;
+  }
+
+  footer #contact {
+    top: 40%;
+    left: 60%;
+    position: absolute;
+    float: right;
+  }
+
+  #social {
+    float: left;
+    top: 85%;
+    left: 5%;
+    position: absolute;
+  }
+  
+  #social p {
+    display: none;
+  }
 }
