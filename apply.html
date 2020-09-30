@@ -9,7 +9,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
         <noscript>Please enable javascript to view the page content.</noscript>
-        <script src='script.js'></script>
+        
     </head>
     
     <body>
@@ -187,5 +187,27 @@
                 <p>Copyright © 2020 Data Science Union.<br>All rights reserved.</p>
             </ul>
         </footer>
+        <script>
+            function phone() { // getter runs when you ask for the property
+                var md = new MobileDetect(window.navigator.userAgent);
+                return md.mobile() ? true : false;
+            }
+
+            $(document).ready(function() {
+
+                if (phone()) { // asking for subj.phone will detect phone
+                    $("#loading div").css("width", "80%");
+                    $("#loading div").html('It seems that you are using a touchscreen device or a phone. Please use a laptop or desktop instead to view the page content.<br><br>Sorry about the inconvenience!');
+                } else {
+                    $(window).on("load", function(){
+                        setTimeout(function() {
+                        $("#loading").fadeOut("slow");
+                        }, 1000);
+                    }); 
+                }
+            });
+
+        </script>
+        <script src='script.js'></script>
 </body>
 </html>
