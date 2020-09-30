@@ -1,3 +1,22 @@
+function phone() { // getter runs when you ask for the property
+    var md = new MobileDetect(window.navigator.userAgent);
+    return md.mobile() ? true : false;
+}
+
+$(document).ready(function() {
+
+    if (phone()) { // asking for subj.phone will detect phone
+        $("#loading div").css("width", "80%");
+        $("#loading div").html('hahahah.It seems that you are using a touchscreen device or a phone. Please use a laptop or desktop instead to view the page content.<br><br>Sorry about the inconvenience!');
+    } else {
+        $(window).on("load", function(){
+            setTimeout(function() {
+            $("#loading").fadeOut("slow");
+            }, 1000);
+        }); 
+    }
+});
+
 // Variables
 let view_1 = document.getElementById('faq1-click');
 let q1 = document.getElementById('q1');
@@ -92,21 +111,4 @@ close_4.onclick = hide_4;
 view_5.onclick = open_5;
 close_5.onclick = hide_5;
 
-function phone() { // getter runs when you ask for the property
-    var md = new MobileDetect(window.navigator.userAgent);
-    return md.mobile() ? true : false;
-}
 
-$(document).ready(function() {
-
-    if (phone()) { // asking for subj.phone will detect phone
-        $("#loading div").css("width", "80%");
-        $("#loading div").html('hahahah.It seems that you are using a touchscreen device or a phone. Please use a laptop or desktop instead to view the page content.<br><br>Sorry about the inconvenience!');
-    } else {
-        $(window).on("load", function(){
-            setTimeout(function() {
-            $("#loading").fadeOut("slow");
-            }, 1000);
-        }); 
-    }
-});
