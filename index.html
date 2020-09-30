@@ -5,6 +5,7 @@
         <link rel="shortcut icon" href="logo_bear.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="./landing.css" type="text/css" rel="stylesheet">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js'></script>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
         <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -18,7 +19,8 @@
                 <a href="./our_projects.html">&lt;Projects&gt;</a>
                 <a href="./apply.html">&lt;Join Us&gt;</a>
         </div>
-    -->        
+    -->    
+        
     <div id="loading">
             <div class="sk-cube-grid">
                 <img class="sk-cube sk-cube1" src="Elements/loader/Polygon 2.png">
@@ -96,8 +98,8 @@
             <ul>
                 <!--<li><a href="./index.html" style="color: #F3A47D;">Home</a></li>
                 <li><a href="./about.html">About Us</a></li>
-                <!--<li><a href="./team.html">The Team</a></li>-->
-                <li><a href="./our_projects.html">Projects</a></li>
+                <li><a href="./team.html">The Team</a></li>-->
+                <!--<li><a href="./our_projects.html">Projects</a></li>
                 <li><a href="./apply.html">Join Us</a></li>-->
                 <li class='footer-nav'><a href="./index.html" style="color: #F3A47D;">Home</a></li>
                 <li class='footer-nav'><a href="./about.html">About Us</a></li>
@@ -119,13 +121,22 @@
             </ul>
         </footer>
         <script>
+            function phone() { // getter runs when you ask for the property
+                var md = new MobileDetect(this.userAgent);
+                return md.mobile() ? true : false;
+            }
 
-            $(window).on("load", function(){
-                setTimeout(function() {
-                $("#loading").fadeOut("slow");
-            }, 3000);
-            });  
-            
+            $(document).ready(function() {
+                if (phone()) { // asking for subj.phone will detect phone
+                    $("#loading").html('It seems that you are using a touchscreen device or a phone. Please use a laptop or desktop instead to view the page content.');
+                } else {
+                    $(window).on("load", function(){
+                        setTimeout(function() {
+                        $("#loading").fadeOut("slow");
+                        }, 3000);
+                    });  
+                }
+            });
         </script>
     </body>
 </html>
