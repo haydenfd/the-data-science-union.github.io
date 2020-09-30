@@ -17,7 +17,7 @@
 
     <body>
         <div id="loading">
-            <div class="sk-cube-grid"><!--
+            <div class="sk-cube-grid">
                 <img class="sk-cube sk-cube1" src="Elements/loader/Polygon 2.png">
                 <img class="sk-cube sk-cube2" src="Elements/loader/Polygon 11.png">
                 <img class="sk-cube sk-cube3" src="Elements/loader/Polygon 10.png">
@@ -28,7 +28,7 @@
                 <img class="sk-cube sk-cube8" src="Elements/loader/Polygon 5.png">
                 <img class="sk-cube sk-cube9" src="Elements/loader/Polygon 4.png">
                 <img class="sk-cube sk-cube10" src="Elements/loader/Polygon 3.png">
-                <img class="sk-cube sk-cube11" src="Elements/loader/Polygon 1.png">-->
+                <img class="sk-cube sk-cube11" src="Elements/loader/Polygon 1.png">
               </div>
         </div>
         <div id="header">
@@ -122,13 +122,8 @@
                     $(window).on("load", function(){
                         setTimeout(function() {
                         $("#loading").fadeOut("slow");
-                        }, 0);
-                    }); /*
-                    $(window).on("load", function(){
-                        setTimeout(function() {
-                        $("#loading").fadeOut("slow");
-                        }, 3000);
-                    });  */
+                        }, 1000);
+                    }); 
                 }
             });
         </script>

@@ -12,13 +12,8 @@ $(document).ready(function() {
         $(window).on("load", function(){
             setTimeout(function() {
             $("#loading").fadeOut("slow");
-            }, 0);
-        }); /*
-        $(window).on("load", function(){
-            setTimeout(function() {
-            $("#loading").fadeOut("slow");
-            }, 3000);
-        });  */
+            }, 1000);
+        }); 
     }
 });
 
