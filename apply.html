@@ -3,6 +3,7 @@
 <html>
     <head>
         <title>Join Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="logo_bear.png">
         <link href="./apply.css" type="text/css" rel="stylesheet">
         <script src='https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js'></script>
@@ -198,7 +199,7 @@
             
             if (phone()) { // asking for subj.phone will detect phone
                 $(".sk-cube-grid").css("width", "80%");
-                $(".sk-cube-grid").html('hahahah.It seems that you are using a touchscreen device or a phone. Please use a laptop or desktop instead to view the page content.<br><br>Sorry about the inconvenience!');
+                $(".sk-cube-grid").html('It seems that you are using a touchscreen device or a phone. Please use a laptop or desktop instead to view the page content.<br><br>Sorry about the inconvenience!');
             } else {
                 $(window).on("load", function(){
                     setTimeout(function() {
