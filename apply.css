@@ -367,7 +367,9 @@ body{
 
   .faq1 p, .faq2 p, .faq3 p, .faq4 p, .faq5 p, .faq6 p, .faq7 p {
     display: inline-block;
+    position: relative;
     margin: 0px;
+    max-width: 90%;
   }
 
   .faq_button {
@@ -381,6 +383,7 @@ body{
 
   #faq1-answer, #faq2-answer, #faq3-answer, #faq4-answer, #faq5-answer, #faq6-answer, #faq7-answer {
     display: none;
+    position: relative;
     margin: 10px;
   }
 
