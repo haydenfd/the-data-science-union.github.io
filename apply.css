@@ -347,6 +347,7 @@ body{
   }
   
   .faq1, .faq2, .faq3, .faq4, .faq5, .faq6, .faq7 {
+    float: right;
     position: relative;
     display: inline-block;
     border: 1px solid #537ABB;
@@ -358,7 +359,6 @@ body{
     text-align: right;
     padding: 1% 15px;
     margin-right: 10%;
-    float: right;
   }
 
   #q1, #q2, #q3, #q4, #q5, #q6, #q7 {
