@@ -137,8 +137,6 @@ let hide_7 = function() {
 
 //}
 
-
-
 // Calls
 view_1.onclick = open_1;
 close_1.onclick = hide_1;
