@@ -365,7 +365,11 @@ section p {
   display: none;
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 100px) and (max-width: 1001px) {
+=======
+@media only screen and (min-width: 100px) and (max-width: 1001px) and (orientation: portrait) {
+>>>>>>> dccc16dadf49a1391d3f905655e51590219524b4
   #nav-button {
     display: block;
     float: right;
@@ -376,6 +380,7 @@ section p {
     height: auto;
   }
 
+<<<<<<< HEAD
   #logo_dsu {
     width: 90%;
   }
@@ -397,6 +402,19 @@ section p {
     display: block;
   }
   
+=======
+  .dropdown {
+    display: block;
+  }
+  
+  .dropdown-menu.show {
+    display: block;
+  }
+  .dropdown-item {
+    display: block;
+  }
+
+>>>>>>> dccc16dadf49a1391d3f905655e51590219524b4
   .btn {
     width: 10%;
     float: right;
@@ -415,9 +433,15 @@ section p {
   }
 
   #aboutUs h1 {
+<<<<<<< HEAD
     left: 30%;
     font-size: 2em;
     top: -35%;
+=======
+    left: 40%;
+    font-size: 2.8em;
+    top: -20%;
+>>>>>>> dccc16dadf49a1391d3f905655e51590219524b4
   }
 
   #aboutUs img {
@@ -425,15 +449,22 @@ section p {
   }
 
   #aboutUs h2 {
+<<<<<<< HEAD
     width: 70%;
     left: 30%;
     top: 100%;
     font-size: 1.5em;
     text-align: center;
+=======
+    width: 60%;
+    left: 30%;
+    top: 110%;
+>>>>>>> dccc16dadf49a1391d3f905655e51590219524b4
   }
 
   #curriculum {
     margin-top: 30%;
+<<<<<<< HEAD
    
   }
 
@@ -446,6 +477,8 @@ section p {
   }
   #professional-development p{
     width: 90%;
+=======
+>>>>>>> dccc16dadf49a1391d3f905655e51590219524b4
   }
 
   footer {
@@ -458,21 +491,36 @@ section p {
   }
 
   footer #contact {
+<<<<<<< HEAD
     top: 40%;
     left: 60%;
     position: absolute;
     float: right;
+=======
+    top: 5%;
+    position: relative;
+    float: left;
+>>>>>>> dccc16dadf49a1391d3f905655e51590219524b4
   }
 
   #social {
     float: left;
+<<<<<<< HEAD
     top: 85%;
     left: 5%;
     position: absolute;
+=======
+    top: 30%;
+    left: 5%;
+    position: relative;
+>>>>>>> dccc16dadf49a1391d3f905655e51590219524b4
   }
   
   #social p {
     display: none;
   }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> dccc16dadf49a1391d3f905655e51590219524b4

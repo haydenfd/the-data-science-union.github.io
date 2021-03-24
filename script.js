@@ -33,55 +33,85 @@ let close_7 = document.getElementById('faq7-rotate');
 let open_1 = function() {
     moreInfo_1.style.display = 'inline-block';
     close_1.style.display = 'inline-block';
+<<<<<<< HEAD
     q1.style.position = "absolute";
     q1.style.right = "15px";
+=======
+    q1.style.color = "#537ABB";
+>>>>>>> dccc16dadf49a1391d3f905655e51590219524b4
     view_1.style.display = 'none';
 }
 let hide_1 = function() {
     moreInfo_1.style.display = 'none';
     close_1.style.display = 'none';
+<<<<<<< HEAD
     q1.style.position = "relative";
     q1.style.right = "0px";
     view_1.style.display = 'block';
+=======
+    q1.style.color = "#4C4C4C";
+    view_1.style.display = 'inline-block';
+>>>>>>> dccc16dadf49a1391d3f905655e51590219524b4
 }
 let open_2 = function() {
     moreInfo_2.style.display = 'inline-block';
     close_2.style.display = 'inline-block';
+<<<<<<< HEAD
     q2.style.position = "absolute";
     q2.style.right = "15px";
+=======
+    q2.style.color = "#537ABB";
+>>>>>>> dccc16dadf49a1391d3f905655e51590219524b4
     view_2.style.display = 'none';
 }
 let hide_2 = function() {
     moreInfo_2.style.display = 'none';
     close_2.style.display = 'none';
+<<<<<<< HEAD
     q2.style.position = "relative";
     q2.style.right = "0px";
+=======
+    q2.style.color = "#4C4C4C";
+>>>>>>> dccc16dadf49a1391d3f905655e51590219524b4
     view_2.style.display = 'block';
 }
 let open_3 = function() {
     moreInfo_3.style.display = 'inline-block';
     close_3.style.display = 'inline-block';
+<<<<<<< HEAD
     q3.style.position = "absolute";
     q3.style.right = "15px";
+=======
+    q3.style.color = "#537ABB";
+>>>>>>> dccc16dadf49a1391d3f905655e51590219524b4
     view_3.style.display = 'none';
 }
 let hide_3 = function() {
     moreInfo_3.style.display = 'none';
     close_3.style.display = 'none';
+<<<<<<< HEAD
     q3.style.position = "relative";
     q3.style.right = "0px";
+=======
+    q3.style.color = "#4C4C4C";
+>>>>>>> dccc16dadf49a1391d3f905655e51590219524b4
     view_3.style.display = 'block';
 }
 let open_4 = function() {
     moreInfo_4.style.display = 'inline-block';
     close_4.style.display = 'inline-block';
+<<<<<<< HEAD
     q4.style.position = "absolute";
     q4.style.right = "15px";
+=======
+    q4.style.color = "#537ABB";
+>>>>>>> dccc16dadf49a1391d3f905655e51590219524b4
     view_4.style.display = 'none';
 }
 let hide_4 = function() {
     moreInfo_4.style.display = 'none';
     close_4.style.display = 'none';
+<<<<<<< HEAD
     q4.style.position = "relative";
     q4.style.right = "0px";
     view_4.style.display = 'block';
@@ -129,8 +159,55 @@ let hide_7 = function() {
     q7.style.position = "relative";
     q7.style.right = "0px";
     view_7.style.display = 'block';
+=======
+    q4.style.color = "#4C4C4C";
+    view_4.style.display = 'block';
+>>>>>>> dccc16dadf49a1391d3f905655e51590219524b4
+}
+let open_5 = function() {
+    moreInfo_5.style.display = 'inline-block';
+    close_5.style.display = 'inline-block';
+    q5.style.color = "#537ABB";
+    view_5.style.display = 'none';
+}
+let hide_5 = function() {
+    moreInfo_5.style.display = 'none';
+    close_5.style.display = 'none';
+    q5.style.color = "#4C4C4C";
+    view_5.style.display = 'block';
 }
 
+let open_6 = function() {
+    moreInfo_6.style.display = 'inline-block';
+    close_6.style.display = 'inline-block';
+    q6.style.color = "#537ABB";
+    view_6.style.display = 'none';
+}
+let hide_6 = function() {
+    moreInfo_6.style.display = 'none';
+    close_6.style.display = 'none';
+    q6.style.color = "#4C4C4C";
+    view_6.style.display = 'block';
+}
+
+let open_7 = function() {
+    moreInfo_7.style.display = 'inline-block';
+    close_7.style.display = 'inline-block';
+    q7.style.color = "#537ABB";
+    view_7.style.display = 'none';
+}
+let hide_7 = function() {
+    moreInfo_7.style.display = 'none';
+    close_7.style.display = 'none';
+    q7.style.color = "#4C4C4C";
+    view_7.style.display = 'block';
+}
+
+//let open_nav = function() {
+//    view_nav.style.display = 'inline-block';
+//   nav_dropdown.style.display =  'inline-block';
+
+<<<<<<< HEAD
 //let open_nav = function() {
 //    view_nav.style.display = 'inline-block';
 //   nav_dropdown.style.display =  'inline-block';
@@ -138,6 +215,9 @@ let hide_7 = function() {
 //}
 
 
+=======
+//}
+>>>>>>> dccc16dadf49a1391d3f905655e51590219524b4
 
 // Calls
 view_1.onclick = open_1;
