@@ -7,14 +7,8 @@
         <link rel="shortcut icon" href="logo_bear.png">
         <link href="about.css" type="text/css" rel="stylesheet">
         <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
-<<<<<<< HEAD
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-=======
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js'></script>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
->>>>>>> dccc16dadf49a1391d3f905655e51590219524b4
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <noscript>Please enable javascript to view the page content.</noscript>
@@ -110,32 +104,12 @@
             </ul>
         </footer>
         <script>
-<<<<<<< HEAD
 
             $(window).on("load", function(){
                 setTimeout(function() {
                 $("#loading").fadeOut("slow");
             }, 1000);
             });  
-=======
-            function phone() { // getter runs when you ask for the property
-                var md = new MobileDetect(window.navigator.userAgent);
-                return md.mobile() ? true : false;
-            }
-           
-            $(document).ready(function() {
-                if (phone()) { // asking for subj.phone will detect phone
-                    $("#loading div").css("width", "80%");
-                    $("#loading div").html('It seems that you are using a touchscreen device or a phone. Please use a laptop or desktop instead to view the page content.<br><br>Sorry about the inconvenience!');
-                } else {
-                    $(window).on("load", function(){
-                        setTimeout(function() {
-                        $("#loading").fadeOut("slow");
-                        }, 3000);
-                    });  
-                }
-            });
->>>>>>> dccc16dadf49a1391d3f905655e51590219524b4
             
         </script>
     </body>
