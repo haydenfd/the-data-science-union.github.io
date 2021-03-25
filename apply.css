@@ -21,7 +21,7 @@ height: 100%;
 z-index: 999;
 }
 
-
+/*
 #landing_4 {
   position: relative;
   left: 40%;
@@ -51,6 +51,7 @@ z-index: 999;
   display: table;
   clear: both;
 }
+*/
 
 #loading img {
 position: absolute;
