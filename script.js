@@ -86,50 +86,50 @@ let hide_4 = function() {
     q4.style.right = "0px";
     view_4.style.display = 'block';
 }
-let open_5 = function() {
-    moreInfo_5.style.display = 'inline-block';
-    close_5.style.display = 'inline-block';
-    q5.style.position = "absolute";
-    q5.style.right = "15px";
-    view_5.style.display = 'none';
-}
-let hide_5 = function() {
-    moreInfo_5.style.display = 'none';
-    close_5.style.display = 'none';
-    q5.style.position = "relative";
-    q5.style.right = "0px";
-    view_5.style.display = 'block';
-}
+// let open_5 = function() {
+//     moreInfo_5.style.display = 'inline-block';
+//     close_5.style.display = 'inline-block';
+//     q5.style.position = "absolute";
+//     q5.style.right = "15px";
+//     view_5.style.display = 'none';
+// }
+// let hide_5 = function() {
+//     moreInfo_5.style.display = 'none';
+//     close_5.style.display = 'none';
+//     q5.style.position = "relative";
+//     q5.style.right = "0px";
+//     view_5.style.display = 'block';
+// }
 
-let open_6 = function() {
-    moreInfo_6.style.display = 'inline-block';
-    close_6.style.display = 'inline-block';
-    q6.style.position = "absolute";
-    q6.style.right = "15px";
-    view_6.style.display = 'none';
-}
-let hide_6 = function() {
-    moreInfo_6.style.display = 'none';
-    close_6.style.display = 'none';
-    q6.style.position = "relative";
-    q6.style.right = "0px";
-    view_6.style.display = 'block';
-}
+// let open_6 = function() {
+//     moreInfo_6.style.display = 'inline-block';
+//     close_6.style.display = 'inline-block';
+//     q6.style.position = "absolute";
+//     q6.style.right = "15px";
+//     view_6.style.display = 'none';
+// }
+// let hide_6 = function() {
+//     moreInfo_6.style.display = 'none';
+//     close_6.style.display = 'none';
+//     q6.style.position = "relative";
+//     q6.style.right = "0px";
+//     view_6.style.display = 'block';
+// }
 
-let open_7 = function() {
-    moreInfo_7.style.display = 'inline-block';
-    close_7.style.display = 'inline-block';
-    q7.style.position = "absolute";
-    q7.style.right = "15px";
-    view_7.style.display = 'none';
-}
-let hide_7 = function() {
-    moreInfo_7.style.display = 'none';
-    close_7.style.display = 'none';
-    q7.style.position = "relative";
-    q7.style.right = "0px";
-    view_7.style.display = 'block';
-}
+// let open_7 = function() {
+//     moreInfo_7.style.display = 'inline-block';
+//     close_7.style.display = 'inline-block';
+//     q7.style.position = "absolute";
+//     q7.style.right = "15px";
+//     view_7.style.display = 'none';
+// }
+// let hide_7 = function() {
+//     moreInfo_7.style.display = 'none';
+//     close_7.style.display = 'none';
+//     q7.style.position = "relative";
+//     q7.style.right = "0px";
+//     view_7.style.display = 'block';
+// }
 let open_5 = function() {
     moreInfo_5.style.display = 'inline-block';
     close_5.style.display = 'inline-block';
@@ -169,15 +169,15 @@ let hide_7 = function() {
     view_7.style.display = 'block';
 }
 
-//let open_nav = function() {
+// let open_nav = function() {
 //    view_nav.style.display = 'inline-block';
 //   nav_dropdown.style.display =  'inline-block';
 
-//let open_nav = function() {
+// let open_nav = function() {
 //    view_nav.style.display = 'inline-block';
 //   nav_dropdown.style.display =  'inline-block';
 
-//}
+// }
 
 
 
