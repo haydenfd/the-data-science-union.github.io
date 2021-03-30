@@ -30,62 +30,62 @@ let close_7 = document.getElementById('faq7-rotate');
 
 
 // Functions
-let open_1 = function() {
-    moreInfo_1.style.display = 'inline-block';
-    close_1.style.display = 'inline-block';
-    q1.style.position = "absolute";
-    q1.style.right = "15px";
-    view_1.style.display = 'none';
-}
-let hide_1 = function() {
-    moreInfo_1.style.display = 'none';
-    close_1.style.display = 'none';
-    q1.style.position = "relative";
-    q1.style.right = "0px";
-    view_1.style.display = 'block';
-}
-let open_2 = function() {
-    moreInfo_2.style.display = 'inline-block';
-    close_2.style.display = 'inline-block';
-    q2.style.position = "absolute";
-    q2.style.right = "15px";
-    view_2.style.display = 'none';
-}
-let hide_2 = function() {
-    moreInfo_2.style.display = 'none';
-    close_2.style.display = 'none';
-    q2.style.position = "relative";
-    q2.style.right = "0px";
-    view_2.style.display = 'block';
-}
-let open_3 = function() {
-    moreInfo_3.style.display = 'inline-block';
-    close_3.style.display = 'inline-block';
-    q3.style.position = "absolute";
-    q3.style.right = "15px";
-    view_3.style.display = 'none';
-}
-let hide_3 = function() {
-    moreInfo_3.style.display = 'none';
-    close_3.style.display = 'none';
-    q3.style.position = "relative";
-    q3.style.right = "0px";
-    view_3.style.display = 'block';
-}
-let open_4 = function() {
-    moreInfo_4.style.display = 'inline-block';
-    close_4.style.display = 'inline-block';
-    q4.style.position = "absolute";
-    q4.style.right = "15px";
-    view_4.style.display = 'none';
-}
-let hide_4 = function() {
-    moreInfo_4.style.display = 'none';
-    close_4.style.display = 'none';
-    q4.style.position = "relative";
-    q4.style.right = "0px";
-    view_4.style.display = 'block';
-}
+// let open_1 = function() {
+//     moreInfo_1.style.display = 'inline-block';
+//     close_1.style.display = 'inline-block';
+//     q1.style.position = "absolute";
+//     q1.style.right = "15px";
+//     view_1.style.display = 'none';
+// }
+// let hide_1 = function() {
+//     moreInfo_1.style.display = 'none';
+//     close_1.style.display = 'none';
+//     q1.style.position = "relative";
+//     q1.style.right = "0px";
+//     view_1.style.display = 'block';
+// }
+// let open_2 = function() {
+//     moreInfo_2.style.display = 'inline-block';
+//     close_2.style.display = 'inline-block';
+//     q2.style.position = "absolute";
+//     q2.style.right = "15px";
+//     view_2.style.display = 'none';
+// }
+// let hide_2 = function() {
+//     moreInfo_2.style.display = 'none';
+//     close_2.style.display = 'none';
+//     q2.style.position = "relative";
+//     q2.style.right = "0px";
+//     view_2.style.display = 'block';
+// }
+// let open_3 = function() {
+//     moreInfo_3.style.display = 'inline-block';
+//     close_3.style.display = 'inline-block';
+//     q3.style.position = "absolute";
+//     q3.style.right = "15px";
+//     view_3.style.display = 'none';
+// }
+// let hide_3 = function() {
+//     moreInfo_3.style.display = 'none';
+//     close_3.style.display = 'none';
+//     q3.style.position = "relative";
+//     q3.style.right = "0px";
+//     view_3.style.display = 'block';
+// }
+// let open_4 = function() {
+//     moreInfo_4.style.display = 'inline-block';
+//     close_4.style.display = 'inline-block';
+//     q4.style.position = "absolute";
+//     q4.style.right = "15px";
+//     view_4.style.display = 'none';
+// }
+// let hide_4 = function() {
+//     moreInfo_4.style.display = 'none';
+//     close_4.style.display = 'none';
+//     q4.style.position = "relative";
+//     q4.style.right = "0px";
+//     view_4.style.display = 'block';
+// }
 // let open_5 = function() {
 //     moreInfo_5.style.display = 'inline-block';
 //     close_5.style.display = 'inline-block';
@@ -130,6 +130,59 @@ let hide_4 = function() {
 //     q7.style.right = "0px";
 //     view_7.style.display = 'block';
 // }
+
+let open_1 = function() {
+    moreInfo_1.style.display = 'inline-block';
+    close_1.style.display = 'inline-block';
+    q1.style.color = "#537ABB";
+    view_1.style.display = 'none';
+}
+let hide_1 = function() {
+    moreInfo_1.style.display = 'none';
+    close_1.style.display = 'none';
+    q1.style.color = "#4C4C4C";
+    view_1.style.display = 'block';
+}
+
+let open_2 = function() {
+    moreInfo_2.style.display = 'inline-block';
+    close_2.style.display = 'inline-block';
+    q2.style.color = "#537ABB";
+    view_2.style.display = 'none';
+}
+let hide_2 = function() {
+    moreInfo_2.style.display = 'none';
+    close_2.style.display = 'none';
+    q2.style.color = "#4C4C4C";
+    view_2.style.display = 'block';
+}
+
+let open_3 = function() {
+    moreInfo_3.style.display = 'inline-block';
+    close_3.style.display = 'inline-block';
+    q3.style.color = "#537ABB";
+    view_3.style.display = 'none';
+}
+let hide_3 = function() {
+    moreInfo_3.style.display = 'none';
+    close_3.style.display = 'none';
+    q3.style.color = "#4C4C4C";
+    view_3.style.display = 'block';
+}
+
+let open_4 = function() {
+    moreInfo_4.style.display = 'inline-block';
+    close_4.style.display = 'inline-block';
+    q4.style.color = "#537ABB";
+    view_4.style.display = 'none';
+}
+let hide_4 = function() {
+    moreInfo_4.style.display = 'none';
+    close_4.style.display = 'none';
+    q4.style.color = "#4C4C4C";
+    view_4.style.display = 'block';
+}
+
 let open_5 = function() {
     moreInfo_5.style.display = 'inline-block';
     close_5.style.display = 'inline-block';
