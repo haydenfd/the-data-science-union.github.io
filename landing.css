@@ -596,7 +596,7 @@ footer #social p {
   }
   
   .btn {
-    width: 10%;
+    width: 20%;
     float: right;
     margin-top: 5%;
     margin-right: 5%;
@@ -608,7 +608,7 @@ footer #social p {
   }
 
   #landing #dsu {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   #landing #ucla {
     font-size: 2em;
@@ -665,9 +665,14 @@ footer #social p {
 
   footer #contact {
     top: 40%;
-    left: 60%;
+    left: 50%;
     position: absolute;
     float: right;
+    
+  }
+
+  footer #contact #social {
+    display: block;
   }
 
   #social {
@@ -678,6 +683,6 @@ footer #social p {
   }
   
   #social p {
-    position: absolute;
+    display: none;
   }
 }
