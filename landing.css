@@ -654,6 +654,10 @@ footer #social p {
     width: 90%;
   }
 
+  .zoom-description p{
+    width: 80%;
+  }
+
   footer {
     position: relative;
   }
