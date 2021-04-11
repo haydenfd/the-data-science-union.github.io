@@ -398,7 +398,7 @@ section p {
   }
   
   .btn {
-    width: 10%;
+    width: 20%;
     float: right;
     margin-top: 5%;
     margin-right: 5%;
@@ -459,7 +459,7 @@ section p {
 
   footer #contact {
     top: 40%;
-    left: 60%;
+    left: 50%;
     position: absolute;
     float: right;
   }
