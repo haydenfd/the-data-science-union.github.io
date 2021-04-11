@@ -210,9 +210,10 @@ body{
   footer {
     position: relative;
     background-color: #2E488E;
-    top: 200px;
+    top: 400px;
     height: 400px;
     padding-left: 10%;
+    
   }
     
   footer ul {
@@ -269,7 +270,7 @@ body{
     text-align: left;
     margin-left: 5%;
     margin-top: 10%;
-
+    position: relative;
   }
 
   .members-description {
@@ -277,6 +278,7 @@ body{
     margin: 0 auto;
     margin-left: 10%;
     margin-bottom: 5%;
+    position: relative;
   }
 
   .gallery-1 {
@@ -371,35 +373,52 @@ body{
         display: none;
       }
 
-      footer {
-        position: relative;
-      }
-    
-      .footer-nav{
-        display: block;
-        position: relative;
-      }
-    
-      footer #contact {
-        top: 40%;
-        left: 50%;
-        position: absolute;
-        float: right;
-        
-      }
-    
-      footer #contact #social {
-        display: block;
-      }
-    
-      #social {
-        float: left;
-        top: 85%;
-        left: 5%;
-        position: absolute;
-      }
+      .gallery-1 {
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+        grid-template-rows: repeat(14, 70vw);
+        /*grid-gap: 3%;*/
+        grid-row-gap: 2%;
+        margin-left: 5%;
+        margin-bottom: 15%;
+    }
+
+    .gallery-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(18, 45vw);
+      grid-column: 1 / span 3;
+      grid-row-gap: 2%;
+      margin-right: 2%;
       
-      #social p {
-        display: none;
-      }
+      
+    }
+
+    footer {
+      position: relative;
+    }
+  
+    .footer-nav{
+      display: block;
+      position: relative;
+      padding: 4%;
+    }
+  
+    footer #contact {
+      top: 40%;
+      left: 50%;
+      position: absolute;
+      float: right;
+    }
+  
+    #social {
+      float: left;
+      top: 85%;
+      left: 5%;
+      position: absolute;
+    }
+    
+    #social p {
+      display: none;
+    }
   }
