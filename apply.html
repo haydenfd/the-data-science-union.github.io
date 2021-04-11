@@ -8,6 +8,8 @@
         <link href="./apply.css" type="text/css" rel="stylesheet">
         <script src='https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js'></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
         <noscript>Please enable javascript to view the page content.</noscript>
         
@@ -31,10 +33,22 @@
         </div>
         <div id="header">
             <a class="column left" href="./index.html"> <img id="logo_dsu" src="Elements/landingPage/logo_dsu.png"></a>
+            <div class="dropdown">
+                <button type="button" class="btn" data-toggle="dropdown">
+                    <img src='./Elements/landingPage/mobile_nav.png' id='nav-button'>
+                </button>
+                <div class="dropdown-menu">
+                    <a class='dropdown-item' href="./about.html">&lt;About Us&gt;</a>
+                    <a class='dropdown-item' href="./team.html">&lt;The Team&gt;</a>
+                    <a class='dropdown-item' href="./our_projects.html">&lt;Projects&gt;</a>
+                    <a class='dropdown-item' href="./apply.html" style="color: #F3A47D;">&lt;Join Us&gt;</a>
+                </div>
+              </div>
+            
             <nav class="column right">
                 <ul id="navbar">
                     <li><a href="./about.html">&lt;About Us&gt;</a></li>
-                    <!--<li><a href="./team.html" target="_blank">&lt;The_Team&gt;</a></li>-->
+                    <li><a href="./team.html" target="_blank">&lt;The Team&gt;</a></li>
                     <li><a href="./our_projects.html">&lt;Projects&gt;</a></li>
                     <li><a href="./apply.html" style="color: #F3A47D;">&lt;Join Us&gt;</a></li>
                 </ul>
@@ -45,7 +59,7 @@
             <button onclick="location.href='google.com'">Interested in Joining?</button>
         </div>
     -->
-        <h1 style="position: relative; text-align: center; color: #2E488E; margin-top: 5%; margin-bottom: 50px;">Recruitment</h1>
+        <h1 id = "recruitment-title">Recruitment</h1>
 
         <div class="announcement">
             <h3 style="padding: 0px 10px; font-size: 20px; font-weight: normal; line-height: 30px; color: #4C4C4C;">ANNOUNCEMENT</h3>
@@ -203,20 +217,20 @@
         </div>
         <footer>
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About Us</a></li>
-                <!--<li><a href="./team.html">The Team</a></li>-->
-                <li><a href="./our_projects.html">Projects</a></li>
-                <li><a href="./apply.html" style="color: #F3A47D;">Join Us</a></li>
+                <li class='footer-nav'><a href="./index.html">Home</a></li>
+                <li class='footer-nav'><a href="./about.html">About Us</a></li>
+                <li class='footer-nav'><a href="./team.html">The Team</a></li>
+                <li class='footer-nav'><a href="./our_projects.html">Projects</a></li>
+                <li class='footer-nav'><a href="./apply.html" style="color: #F3A47D;">Join Us</a></li>
             </ul>
-
+    
             <div id="contact">
                 <h2>&gt; Contact Us</h2>
                 <p>[1] email: ucladsu@gmail.com </p>
             </div>
-
+    
             <ul id="social">
-            <li><a href="https://www.instagram.com/dsuatucla/" target="_blank"><img src="./Elements/landingPage/ig_logo.png" alt="Instagram" style = "width:50px; height:50px; border:0; border-radius: 100%;"> </a></li>
+               <li><a href="https://www.instagram.com/dsuatucla/" target="_blank"><img src="./Elements/landingPage/ig_logo.png" alt="Instagram" style = "width:50px; height:50px; border:0; border-radius: 100%;"> </a></li>
                 <li><a href="https://www.linkedin.com/company/the-data-science-union-at-ucla/" target="_blank"> <img src="./Elements/landingPage/linkedin_logo.png" alt="LinkedIn" style = "width:50px; height:50px; border:0; border-radius: 100%;"></a></li>
                 <li><a href="https://www.facebook.com/DSUatUCLA/" target="_blank"><img src="./Elements/landingPage/facebook_logo.png" alt="Facebook" style = "width:50px; height:50px; border:0; border-radius: 100%;"></a></li>
                 <p>Copyright © 2020 Data Science Union.<br>All rights reserved.</p>
@@ -224,24 +238,13 @@
         </footer>
         <script src='script.js'></script>
         <script>
-        function phone() { // getter runs when you ask for the property
-            var md = new MobileDetect(window.navigator.userAgent);
-            return md.mobile() ? true : false;
-        }
-        
-        $(document).ready(function() {
+
+            $(window).on("load", function(){
+                setTimeout(function() {
+                $("#loading").fadeOut("slow");
+            }, 1000);
+            });  
             
-            if (phone()) { // asking for subj.phone will detect phone
-                $(".sk-cube-grid").css("width", "80%");
-                $(".sk-cube-grid").html('It seems that you are using a touchscreen device or a phone. Please use a laptop or desktop instead to view the page content.<br><br>Sorry about the inconvenience!');
-            } else {
-                $(window).on("load", function(){
-                    setTimeout(function() {
-                    $("#loading").fadeOut("slow");
-                    }, 1000);
-                }); 
-            }
-        });
         </script>
 </body>
 </html>

@@ -9,25 +9,29 @@ body{
   line-height: 156%;
   letter-spacing: 0.05em;
 }
-  
+
 #loading {
-background: #FFFFFF;
-position: fixed;
-display: flex;
-justify-content: center;
-text-align: center;
-width: 100%;
-height: 100%;
-z-index: 999;
+  background: #FFFFFF;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
 }
 
-/*
+#loading img {
+  position: absolute;
+}
+
+
 #landing_4 {
   position: relative;
   left: 40%;
   top: 500px;
 }
-
+/*
 #landing_4 button {
   margin-top: 10px;
   background: #537ABB;
@@ -53,9 +57,6 @@ z-index: 999;
 }
 */
 
-#loading img {
-position: absolute;
-}
 
 .sk-cube-grid {
 position: fixed;
@@ -250,9 +251,10 @@ bottom: 32.34%;
 footer {
   position: relative;
   background-color: #2E488E;
-  top: 200px;
+  top: 400px;
   height: 400px;
   padding-left: 10%;
+  
 }
   
 footer ul {
@@ -304,6 +306,15 @@ footer #social p {
       #####  ####### ### #     #     #####   #####  
                                                     
 */
+
+#recruitment-title {
+  position: relative; 
+  text-align: center; 
+  color: #2E488E; 
+  margin-top: 5%; 
+  margin-bottom: 50px;
+}
+
 .announcement {
   width: 70%;
   margin: 0 auto;
@@ -420,4 +431,94 @@ footer #social p {
   content: "";
   display: table;
   clear: both;
+}
+
+.dropdown {
+  display: none;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1001px) {
+  #nav-button {
+    display: block;
+    float: right;
+    cursor: pointer;
+    margin-top: 10%;
+    margin-right: 10%;
+    width: 70%;
+    height: auto;
+  }
+
+  #logo_dsu {
+    width: 90%;
+  }
+
+  .dropdown{
+    display: block;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+  }
+
+  .dropdown button {
+    border: none;
+    background-color: white;
+  }
+
+  .dropdown-item {
+    display: block;
+  }
+  
+  .btn {
+    width: 20%;
+    float: right;
+    margin-top: 5%;
+    margin-right: 5%;
+    height: auto;
+  }
+
+  .column.right{
+    display: none;
+  }
+
+  #recruitment-title {
+    margin-top: 5%;
+  }
+
+  .timeline-row {
+    margin:0;
+  }
+  
+
+  footer {
+    position: relative;
+  }
+
+  .footer-nav{
+    display: block;
+    position: relative;
+    padding: 4%;
+  }
+
+  footer #contact {
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    float: right;
+  }
+
+  #social {
+    float: left;
+    top: 85%;
+    left: 5%;
+    position: absolute;
+  }
+  
+  #social p {
+    display: none;
+  }
 }
