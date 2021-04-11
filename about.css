@@ -412,6 +412,7 @@ section p {
   
   #aboutUs {
     margin-top: 15%;
+    margin-bottom: 10%;
   }
 
   #aboutUs h1 {
@@ -420,16 +421,18 @@ section p {
     top: -35%;
   }
 
+
   #aboutUs img {
     width: 100%;
   }
 
   #aboutUs h2 {
     width: 70%;
-    left: 30%;
+    left: 20%;
     top: 100%;
     font-size: 1.5em;
     text-align: center;
+    
   }
 
   #curriculum {
