@@ -1,123 +1,273 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
+
+<head>
         <title>The Team</title>
-        <link href="./style.css" type="text/css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-   
-    </head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="logo_bear.png">
+        <link href="./team.css" type="text/css" rel="stylesheet">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <noscript>Please enable javascript to view the page content.</noscript>
+</head>  
+    
     <body>
-
-            <nav class="navbar">
-                    <a href="./index.html"> <img src="Screen Shot 2020-08-02 at 3.45.25 PM.png"></a>
-                <ul>    
-                    <li><a href="./about.html" target="_blank">&lt;About_Us&gt;</a></li>
-                    <li><a href="./team.html" target="_blank">&lt;The_Team&gt;</a></li>
-                    <li><a href="./our_projects.html" target="_blank">&lt;Projects&gt;</a></li>
-                    <li><a href="./apply.html" target="_blank">&lt;Application&gt;</a></li>
-                </ul>
-            </nav>
-
-
-        <div class="exec">
-            <h1>&lt;Executive_Board&gt;</h1>
-            <p class="description"> &nbsp; &nbsp; &nbsp; &nbsp;Our board members have diverse academic backgrounds and professional experiences, providing our <br>&nbsp; &nbsp; &nbsp; &nbsp;club members with networking and mentorship opportunities in various industries. With an emphasis <br>&nbsp; &nbsp; &nbsp; &nbsp;on collaboration and community, the DSU board works together with members to grow as a club.</p>
-        <main>
-    <!--
-            <div class = "member A">
-                <img src="logo-01_burned.jpeg" style="width:200px;height:200px;border:0;" />
-
-            </div>
-
-            <div class="member B">
-                <img src="logo-01_burned.jpeg" style="width:200px;height:200px;border:0;" />
-            </div>
-
-            <div class="member C">
-                <img src="logo-01_burned.jpeg" style="width:200px;height:200px;border:0;" />
-            </div>
-
-            <div class="member D">
-                <img src="logo-01_burned.jpeg" style="width:200px;height:200px;border:0;" />
-            </div>
-
-            <div class="member E">
-                <img src="logo-01_burned.jpeg" style="width:200px;height:200px;border:0;" />
-            </div>
-
-            <div class="member F">
-                <img src="logo-01_burned.jpeg" style="width:200px;height:200px;border:0;" />
-            </div>
-
-          </main>
-
-        -->
-          </div>
-
-          <br>
-          <br>
-
-
-            <div class="genmembers">
-              <h1>&lt;Members&gt;</h1>
-              <p class="description">&nbsp; &nbsp; &nbsp; &nbsp;Members learn the data science process and apply that knowledge to internal and client projects. <br>&nbsp; &nbsp; &nbsp; &nbsp;Each member has the chance to join a committee and work closely with a board member to <br>&nbsp; &nbsp; &nbsp; &nbsp;influence the future of the club.</p>
-<!--
-              <main>
-              <div class="member a">
-                  <img src="logo-01_burned.jpeg" style="width:200px;height:200px;border:0;" />
+        <div id="loading">
+            <div class="sk-cube-grid">
+                <img class="sk-cube sk-cube1" src="Elements/loader/Polygon 2.png">
+                <img class="sk-cube sk-cube2" src="Elements/loader/Polygon 11.png">
+                <img class="sk-cube sk-cube3" src="Elements/loader/Polygon 10.png">
+                <img class="sk-cube sk-cube4" src="Elements/loader/Polygon 9.png">
+                <img class="sk-cube sk-cube5" src="Elements/loader/Polygon 8.png">
+                <img class="sk-cube sk-cube6" src="Elements/loader/Polygon 7.png">
+                <img class="sk-cube sk-cube7" src="Elements/loader/Polygon 6.png">
+                <img class="sk-cube sk-cube8" src="Elements/loader/Polygon 5.png">
+                <img class="sk-cube sk-cube9" src="Elements/loader/Polygon 4.png">
+                <img class="sk-cube sk-cube10" src="Elements/loader/Polygon 3.png">
+                <img class="sk-cube sk-cube11" src="Elements/loader/Polygon 1.png">
               </div>
+        </div>
 
-              <div class="member b">
-                  <img src="logo-01_burned.jpeg" style="width:200px;height:200px;border:0;" />
-              </div>
-  
-              <div class="member c">
-                  <img src="logo-01_burned.jpeg" style="width:200px;height:200px;border:0;" />
-              </div>
-  
-              <div class="member d">
-                  <img src="logo-01_burned.jpeg" style="width:200px;height:200px;border:0;" />
-              </div>
-  
-              <div class="member e">
-                  <img src="logo-01_burned.jpeg" style="width:200px;height:200px;border:0;" />
-              </div>
-  
-              <div class="member f">
-                  <img src="logo-01_burned.jpeg" style="width:200px;height:200px;border:0;" />
-              </div>
-            -->
+        <div id="header">
+                <a class="column left" href="./index.html"> <img id="logo_dsu" src="./Elements/landingPage/logo_dsu.png"></a>
+    
+                <div class="dropdown">
+                    <button type="button" class="btn" data-toggle="dropdown">
+                        <img src='./Elements/landingPage/mobile_nav.png' id='nav-button'>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class='dropdown-item' href="./about.html" style="color: #F3A47D;">&lt;About Us&gt;</a>
+                        <a class='dropdown-item' href="./team.html" style="color: #F3A47D;">&lt;The Team&gt;</a>
+                        <a class='dropdown-item' href="./our_projects.html">&lt;Projects&gt;</a>
+                        <a class='dropdown-item' href="./apply.html">&lt;Join Us&gt;</a>
+                    </div>
+                  </div>
+    
+                <nav class="column right">
+                    <ul id="navbar">
+                        <li><a href="./about.html">&lt;About Us&gt;</a></li>
+                        <li><a href="./team.html" target="_blank">&lt;The Team&gt;</a></li>
+                        <li><a href="./our_projects.html">&lt;Projects&gt;</a></li>
+                        <li><a href="./apply.html">&lt;Join Us&gt;</a></li>
+                    </ul>
+                </nav>
             </div>
-        </main>
-  
-
-
         
+            <p class="members-title">&lt;Executive Board&gt;</p>
+            <div class="members-description">Our board members have diverse academic backgrounds and professional experiences, providing our club members with networking and mentorship opportunities in various industries. With an emphasis on collaboration and community, the DSU board works together with members to grow as a club. </div>
+            <div class="gallery-1">
+                          <figure class="gallery__item gallery__item--1">
+                            <img src="./Elements/teamPage/jiahao-huang_pic.jpg" class="gallery__img" alt="Image 1">
+                            <h4 class="member-name">Jiahao Huang</h4>
+                            <p class="exec-title">President</p>
+                          </figure>
+                          <figure class="gallery__item gallery__item--2">
+                            <img src="./Elements/teamPage/jonah-wiener-brodkey_pic.PNG" class="gallery__img" alt="Image 2">
+                            <h4 class="member-name">Jonah Wiener-Brodkey</h4>
+                            <p class="exec-title">External Vice President</p>
+                          </figure>
+                          <figure class="gallery__item gallery__item--3">
+                            <img src="./Elements/teamPage/andy-chen_pic.jpg" class="gallery__img" alt="Image 3">
+                            <h4 class="member-name">Andy Chen</h4>
+                            <p class="exec-title">Internal Vice President</p>
+                          </figure>
+                          <figure class="gallery__item gallery__item--4">
+                            <img src="./Elements/teamPage/sean-tjoa_pic.jpg" class="gallery__img" alt="Image 4">
+                            <h4 class="member-name">Sean Tjoa</h4>
+                            <p class="exec-title">Curriculum Co-Director</p>
+                          </figure>
+                          <figure class="gallery__item gallery__item--5">
+                            <img src="./Elements/teamPage/tristan-dewing_pic.JPG" class="gallery__img" alt="Image 5">
+                            <h4 class="member-name">Tristan Dewing</h4>
+                            <p class="exec-title">Curriculum Co-Director</p>
+                          </figure>
+                          <figure class="gallery__item gallery__item--6">
+                            <img src="./Elements/teamPage/kevin-zhao_pic.jpg" class="gallery__img" alt="Image 6">
+                            <h4 class="member-name">Kevin Zhao</h4>
+                            <p class="exec-title">Finance Co-Director</p>
+                          </figure>
+                          <figure class="gallery__item gallery__item--7">
+                                <img src="./Elements/teamPage/emily-gong_pic.JPG" class="gallery__img" alt="Image 7">
+                                <h4 class="member-name">Emily Gong</h4>
+                                <p class="exec-title">Marketing Director</p>
+                              </figure>
+                            <figure class="gallery__item gallery__item--8">
+                                    <img src="./Elements/teamPage/louis-zhao_pic.jpg" class="gallery__img" alt="Image 8">
+                                    <h4 class="member-name">Louis Zhao</h4>
+                                    <p class="exec-title">Membership Director</p>
+                            </figure>
+                            <figure class="gallery__item gallery__item--9">
+                              <img src="./Elements/teamPage/christine-hamakawa_pic.jpg" class="gallery__img" alt="Image 9">
+                              <h4 class="member-name">Christine Hamakawa</h4>
+                              <p class="exec-title">Professional Outreach Director</p>
+                            </figure>
+                            <figure class="gallery__item gallery__item--10">
+                              <img src="./Elements/teamPage/madison-kohls_pic.jpg" class="gallery__img" alt="Image 10">
+                              <h4 class="member-name">Madison Kohls</h4>
+                              <p class="exec-title">Projects Director</p>
+                            </figure>
+                            <figure class="gallery__item gallery__item--11">
+                              <img src="./Elements/teamPage/tony-li_pic.jpg" class="gallery__img" alt="Image 11">
+                              <h4 class="member-name">Tony Li</h4>
+                              <p class="exec-title">Webmaster</p>
+                            </figure>
+            </div>
+
+<br>
+<br>
+<br>
+
+
+            <p class="members-title">&lt;Members&gt;</p>
+            <div class="members-description">Members learn the data science process and apply that knowledge to internal and client projects. Each member has the chance to join a committee and work closely with a board member to influence the future of the club.</div>
+        <div class="gallery-2">
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/lu-cheng_pic.JPG" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Lu Cheng</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/rebecca-chua_pic.jpg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Rebecca Chua</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/john-paul-dillard_pic.jpg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">John Paul Dillard</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/anish-dulla_pic.JPG" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Anish Dulla</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/ethan-duong_pic.JPG" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Ethan Duong</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/william-foote_pic.jpg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">William Foote</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/elizabeth-gallmeister_pic.jpg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Elizabeth Gallmeister</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/ivan-guan_pic.jpg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Ivan Guan</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/justin-kaufman_pic.png" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Justin Kaufman</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/sarah-kosic_pic.jpg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Sarah Kosic</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/belle-lerdworatawee_pic.jpg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Belle Lerdworatawee</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/victor-lin_pic.jpg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Victor Lin</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/andrew-liu_pic.jpg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Andrew Liu</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/will-liu_pic.jpg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Will Liu</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/shail-mirpuri_pic.jpg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Shail Mirpuri</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/karen-nguyen_pic.jpg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Karen Nguyen</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/ngoc-trinh-nguyen_pic.jpg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Ngoc Trinh Nguyen</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/pawan-polcharoen_pic.jpg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Pawan Polcharoen</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/tushar-roy_pic.PNG" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Tushar Roy</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/karina-santoso_pic.jpg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Karina Santoso</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/marco-scialanga_pic.jpeg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Marco Scialanga</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/sida-tian_pic.jpg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Sida Tian</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/darren-tsang_pic.jpeg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Darren Tsang</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/adhvaith-vijay_pic.jpg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Adhvaith Vijay</h4>
+          </figure>         
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/coco-wu_pic.jpg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Coco Wu</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/aimee-xu_pic.jpeg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Aimee Xu</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/sophie-yun_pic.jpg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Sophie Yun</h4>
+          </figure>
+          <figure class="gallery__item gallery__item--11">
+            <img src="./Elements/teamPage/tracy-zhao_pic.jpg" class="gallery__img" alt="Image 11">
+            <h4 class="member-name">Tracy Zhao</h4>
+          </figure>
+          
+        </div>
+
+
     <footer>
-            <ul>
-                <li class="text-left"><a class="text-white" href="./index.html">Home</a></li>
-                <li class="text-left"><a class="text-white" href="./about.html">About Us</a></li>
-                <li class="text-left"><a class="text-white" href="./team.html">The Team</a></li>
-                <li class="text-left"><a class="text-white" href="./projects.html">Projects</a></li>
-                <li class="text-left"><a class="text-white" href="./apply.html">Applications</a></li>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./team.html">The Team</a></li>
+            <li><a href="./our_projects.html">Projects</a></li>
+            <li><a href="./apply.html" style="color: #F3A47D;">Join Us</a></li>
             </ul>
-
-            <div class="contact">
-                <h2>&gt; Contact Us</h2>
-                <p>[1] email: (ucladsu@gmail.com) </p>
-            </div>
-
-            <ul class="social">
-               <li><a href="https://www.instagram.com/dsuatucla/" target="_blank"><img src="Screen Shot 2020-08-02 at 2.41.22 PM.png" alt="Instagram" style = "width:50px; height:50px; border:0; border-radius: 100%;"> </a></li>
-                <li><a href="https://www.linkedin.com/company/the-data-science-union-at-ucla/"> <img src="/Users/lij/Desktop/DSU Website/Screen Shot 2020-06-27 at 12.49.14 PM.png" alt="LinkedIn" style = "width:50px; height:50px; border:0; border-radius: 100%;"></a></li>
-                <li><a href="https://www.facebook.com/DSUatUCLA/" target="_blank"><img src="Screen Shot 2020-06-27 at 12.54.05 PM.png" alt="Facebook" style = "width:50px; height:50px; border:0; border-radius: 100%;"></a></li>
-            </ul>
-            
-        </footer>
         
-            
-
-    </body>
+            <div id="contact">
+                <h2>&gt; Contact Us</h2>
+                <p>[1] email: ucladsu@gmail.com </p>
+            </div>
+        
+            <ul id="social">
+                <li><a href="https://www.instagram.com/dsuatucla/" target="_blank"><img src="./Elements/landingPage/ig_logo.png" alt="Instagram" style = "width:50px; height:50px; border:0; border-radius: 100%;"> </a></li>
+                <li><a href="https://www.linkedin.com/company/the-data-science-union-at-ucla/" target="_blank"> <img src="./Elements/landingPage/linkedin_logo.png" alt="LinkedIn" style = "width:50px; height:50px; border:0; border-radius: 100%;"></a></li>
+                <li><a href="https://www.facebook.com/DSUatUCLA/" target="_blank"><img src="./Elements/landingPage/facebook_logo.png" alt="Facebook" style = "width:50px; height:50px; border:0; border-radius: 100%;"></a></li>
+                <p>Copyright © 2020 Data Science Union.<br>All rights reserved.</p>
+            </ul>
+    </footer>
+    <script>
+        $(window).on("load", function(){
+            setTimeout(function() {
+            $("#loading").fadeOut("slow");
+        }, 3000);
+        });  
+    </script>
+</body>
 </html>
