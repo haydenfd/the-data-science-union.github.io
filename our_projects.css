@@ -629,6 +629,35 @@ z-index: 1;
   margin: 0 auto;
   margin-left: 11%;
 }
+
+
+footer {
+  position: relative;
+}
+
+.footer-nav{
+  display: block;
+  position: relative;
+  padding: 4%;
+}
+
+footer #contact {
+  top: 40%;
+  left: 50%;
+  position: absolute;
+  float: right;
+}
+
+#social {
+  float: left;
+  top: 85%;
+  left: 5%;
+  position: absolute;
+}
+
+#social p {
+  display: none;
+}
 /*
 .project-item {
     width: 70%;
