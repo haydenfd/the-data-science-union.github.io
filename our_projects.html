@@ -59,9 +59,43 @@
 
         <h1 style='position: relative; display: inline-block; left: 10%; margin-top: 5%; color: #2E488E;'>Our Projects</h1>
         <br>
+
+        
+        <p style='margin-left: 12%; font-size: 1.5rem; color: #4C4C4C;'>&gt; Fall 2021</p>
+        
+        <div class="container" id="project-grid">
+        <div class="row" id="row-2">
+            <div class="col-2">   
+                        <div id='project-3' class='project-item'>
+                                <p>Predicting NBA Players' Salaries</p>
+                                <div class='project-description'>
+                                        An NBA player’s annual salary is determined by the player’s impact which is measured by various factors. Our project aimed to develop a machine learning model that would predict an NBA player’s annual salary based on the player’s game statistics.
+                                </div>
+                                <a href='https://github.com/the-data-science-union/Data_Science_NBA_Project/blob/master/README.md' target='_blank'>
+                                    <span class='link-spanner'></span>
+                                </a>
+                        </div>
+            </div>
+
+            <div class="col-2">
+                    <div id='project-4' class='project-item'>
+                            <p>Building an Age Guesser using Transfer Learning</p>
+                            <div class='project-description'>
+                                    The Internet Movie Database (IMDB) keeps records of 500,000+ celebrities, including their headshots and ages. Our project applies transfer learning to this database in order to build a program that, given a person's photo, accurately predicts their age.
+                            </div>
+                            <a href='https://docs.google.com/presentation/d/1IAe_uXi9arFYic5kessI5lSZ3r0xWRudseJNwt20nao/edit?usp=sharing' target='_blank'>
+                                <span class='link-spanner'></span>
+                            </a>
+                    </div>
+            </div>
+
+        </div>
+        </div>
+       
+       
         <p style='margin-left: 12%; font-size: 1.5rem; color: #4C4C4C;'>&gt; Spring 2020</p>
  
-    <div class="container" id="project-grid">
+        <div class="container" id="project-grid">
         <div class="row" id="row-1">
             <div class="col-2">        
                 <div id='project-1' class='project-item'>
@@ -90,32 +124,6 @@
             
         </div>
 
-        <div class="row" id="row-2">
-            <div class="col-2">   
-                        <div id='project-3' class='project-item'>
-                                <p>Predicting NBA Players' Salaries</p>
-                                <div class='project-description'>
-                                        An NBA player’s annual salary is determined by the player’s impact which is measured by various factors. Our project aimed to develop a machine learning model that would predict an NBA player’s annual salary based on the player’s game statistics.
-                                </div>
-                                <a href='https://github.com/the-data-science-union/Data_Science_NBA_Project/blob/master/README.md' target='_blank'>
-                                    <span class='link-spanner'></span>
-                                </a>
-                        </div>
-            </div>
-
-            <div class="col-2">
-                    <div id='project-4' class='project-item'>
-                            <p>Building an Age Guesser using Transfer Learning</p>
-                            <div class='project-description'>
-                                    The Internet Movie Database (IMDB) keeps records of 500,000+ celebrities, including their headshots and ages. Our project applies transfer learning to this database in order to build a program that, given a person's photo, accurately predicts their age.
-                            </div>
-                            <a href='https://docs.google.com/presentation/d/1IAe_uXi9arFYic5kessI5lSZ3r0xWRudseJNwt20nao/edit?usp=sharing' target='_blank'>
-                                <span class='link-spanner'></span>
-                            </a>
-                    </div>
-            </div>
-
-        </div>
     </div>
 
 
@@ -142,24 +150,13 @@
             </ul>
         </footer>
         <script>
-            function phone() { // getter runs when you ask for the property
-                var md = new MobileDetect(window.navigator.userAgent);
-                return md.mobile() ? true : false;
-            }
 
-            $(document).ready(function() {
-
-                if (phone()) { // asking for subj.phone will detect phone
-                    $("#loading div").css("width", "80%");
-                    $("#loading div").html('It seems that you are using a touchscreen device or a phone. Please use a laptop or desktop instead to view the page content.<br><br>Sorry about the inconvenience!');
-                } else {
-                    $(window).on("load", function(){
-                        setTimeout(function() {
-                        $("#loading").fadeOut("slow");
-                        }, 1000);
-                    }); 
-                }
-            });
+            $(window).on("load", function(){
+                setTimeout(function() {
+                $("#loading").fadeOut("slow");
+            }, 1000);
+            });  
+            
         </script>
     </body>
 </html>
