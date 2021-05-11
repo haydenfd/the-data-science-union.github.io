@@ -249,3 +249,32 @@ view_6.onclick = open_6;
 close_6.onclick = hide_6;
 view_7.onclick = open_7;
 close_7.onclick = hide_7;
+
+
+
+//Form submission validation and emailing
+
+function submitForm(name, email,msg) {
+
+    if (isValidEmail()) {
+        Email.send({
+            Host: "smtp.mailtrap.io",
+            Username: "b226061eb7df75",
+            Password: "5a97a2d2a09cf6",
+            To: "johndoe@gmail.com",
+            From: email,
+            Subject: `Client! ${name} has reached out`,
+            Body: `Name: ${name}<br/> Email: ${email}</br> Message: ${msg}`
+        }).then(message => alert("We have received your email!"))
+    }
+    else {
+        alert("Uh-oh! Your email isn't valid!")
+    }
+}
+
+function isValidEmail() {
+    var mail = document.getElementById('email').value;
+    var email = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+
+    return mail.match(email)
+}
