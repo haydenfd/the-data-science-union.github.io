@@ -163,21 +163,21 @@ body{
   }
     
   #navbar {
-    position: relative;
-    display: inline-block;
-    top: 30px;  
-    padding-left: 150px;
-    padding-right: 100px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid;
-  }
-    
-  #navbar li{
-    display: inline-block;
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-    
+  position: relative;
+  display: inline-flex; /*Made inline flex to push all items to same line*/
+  width: auto;
+  top: 30px;  
+  padding-left: 50px;
+  padding-right: 100px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+}
+  
+#navbar li{
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
   #navbar a {
     text-decoration:none;
     font-size: 18px;
@@ -189,6 +189,7 @@ body{
     
   #navbar a:hover {
     color: #F3A47D;
+    font-size: 150%;
   }
     
   #header:after {
