@@ -294,11 +294,37 @@ body{
 .gallery-2 {
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(8, 22vw);
+  grid-template-rows: repeat(19, 22vw);
   grid-gap: 1%;
   grid-row-gap: 3%;
   margin-right: 3%;
   margin-bottom: 10%;
+}
+
+.gallery__item {
+  background: #344F99;
+  text-align: center;
+  position: relative;
+}
+
+.gallery__item img {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  cursor: pointer;
+}
+
+.gallery__item img:hover {
+  opacity: 0.5;
+  
+}
+
+.gallery__item .member-info {
+  display: none;
+}
+
+.gallery__item img:hover .member-info {
+  display: inline;
+  color: white;
 }
 
 .member-name {
