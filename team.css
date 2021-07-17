@@ -294,7 +294,7 @@ body{
 .gallery-2 {
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(19, 22vw);
+  grid-template-rows: repeat(25, 22vw);
   grid-gap: 1%;
   grid-row-gap: 3%;
   margin-right: 3%;
