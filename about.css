@@ -307,6 +307,31 @@ footer #social p {
   width: 35%;
 }
 
+#work-places {
+  text-align: center;
+  color: #FF925B; 
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 48px;
+}
+
+.gallery-3 {
+  display: grid;
+  margin-top: 10%;
+  grid-template-rows: repeat(3, 15%);
+  grid-template-columns: repeat(4, 22vw);
+  grid-gap: 1%;
+  grid-row-gap: 3%;
+
+}
+
+
+
+.gallery-3 .gallery__item {
+  text-align: center;
+  position: relative;
+}
+
 section {
   position: relative;
   top: 150px;

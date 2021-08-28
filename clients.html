@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>For Clients</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="logo_bear.png">
+    <link href="./clients.css" type="text/css" rel="stylesheet">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <noscript>Please enable javascript to view the page content.</noscript>
+
+</head>
+
+
+<body>
+    <div id="loading">
+        <div class="sk-cube-grid">
+            <img class="sk-cube sk-cube1" src="Elements/loader/Polygon 2.png">
+            <img class="sk-cube sk-cube2" src="Elements/loader/Polygon 11.png">
+            <img class="sk-cube sk-cube3" src="Elements/loader/Polygon 10.png">
+            <img class="sk-cube sk-cube4" src="Elements/loader/Polygon 9.png">
+            <img class="sk-cube sk-cube5" src="Elements/loader/Polygon 8.png">
+            <img class="sk-cube sk-cube6" src="Elements/loader/Polygon 7.png">
+            <img class="sk-cube sk-cube7" src="Elements/loader/Polygon 6.png">
+            <img class="sk-cube sk-cube8" src="Elements/loader/Polygon 5.png">
+            <img class="sk-cube sk-cube9" src="Elements/loader/Polygon 4.png">
+            <img class="sk-cube sk-cube10" src="Elements/loader/Polygon 3.png">
+            <img class="sk-cube sk-cube11" src="Elements/loader/Polygon 1.png">
+        </div>
+    </div>
+
+    <div id="header">
+        <a class="column left" href="./index.html"> <img id="logo_dsu" src="Elements/landingPage/logo_dsu.png"></a>
+        <div class="dropdown">
+            <button type="button" class="btn" data-toggle="dropdown">
+                <img src='./Elements/landingPage/mobile_nav.png' id='nav-button'>
+            </button>
+            <div class="dropdown-menu">
+                <a class='dropdown-item' href="./about.html">&lt;About Us&gt;</a>
+                <a class='dropdown-item' href="./team.html">&lt;The Team&gt;</a>
+                <a class='dropdown-item' href="./our_projects.html">&lt;Projects&gt;</a>
+                <a class='dropdown-item' href="./apply.html" style="color: #F3A47D;">&lt;For Clients&gt;</a>
+                <a class='dropdown-item' href="./apply.html">&lt;Join Us&gt;</a>
+            </div>
+        </div>
+
+        <nav class="column right">
+            <ul id="navbar">
+                <li><a href="./about.html">&lt;About Us&gt;</a></li>
+                <li><a href="./team.html">&lt;The Team&gt;</a></li>
+                <li><a href="./our_projects.html">&lt;Projects&gt;</a></li>
+                <li><a href="./clients.html" style="color: #F3A47D;">&lt;For Clients&gt;</a></li>
+                <li><a href="./apply.html">&lt;Join Us&gt;</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--Not familiar with onsubmit but it might be better to add the event listener onclick -  to the button instead-->
+
+    <div class="client-intro">
+        <h3>You have the data. We have the insights.</h3>
+        <p>Our most experienced members provide pro bono, data-driven consulting services to start-ups, nonprofits, and
+            more. We make sense of your data, identifying key trends and turning them into actionable insights.</p>
+        <p>Want to partner with us? Feel free to reach out at ucladsu@gmail.com</p>
+        <form class='client-form' method="POST" onsubmit = "return false">
+            <label>Get in touch! </label><br>
+
+            <input type="name" class='contact-name' id = "name" placeholder="Enter name" required>
+            <br>
+            <input type="email" class='contact-email' id = "email" placeholder = "Enter email ID" required>
+            <br>
+            <input type = "text" class='contact-msg' id="msg" placeholder="Enter optional message" rows="4" cols="20">
+            <br>
+            <input type="button" class='submit-button' value="Submit"
+                onclick="submitForm(document.getElementById('name').value, document.getElementById('email').value,
+                document.getElementById('name').value, document.getElementById('msg'))">
+        </form>
+        <br>
+        <h4>Our clients</h4>
+        <p><i>Testimony: A big piece of our program is matching families to volunteer mentors, and in 2020 we were faced
+                with a great problem: too many mentors! The UCLA Data Science Union helped us crack open this challenge
+                by developing an algorithm-based web app to help us identify the best-fit matches for our family
+                members. From start to finish, the DSU team was professional, thoughtful, and collaborative, and as a
+                result, our matches have been more data-driven and easier to identify. Thank you DSU! - Brian Rosenbaum,
+                Imagine LA</i></p>
+    </div>
+
+
+    <div class="client-list">
+        <figure class="gallery__item gallery__item--1">
+            <img src="./Elements/clientsPage/duffl-image.png" class="client-img" alt="Image 1">
+            <h4 class="client-name">Duffl</h4>
+            <p class="client-description">Duffl is a 10-minute delivery service for college students, by college
+                students. It currently operates at UCLA and USC.</p>
+        </figure>
+
+        <figure class="gallery__item gallery__item--2">
+            <img src="./Elements/clientsPage/imagine_la-image.png" class="client-img" alt="Image 2">
+            <h4 class="client-name">Imagine LA</h4>
+            <p class="client-description">Imagine LA is a nonprofit committed to ending the cycle of family poverty and
+                homelessness. Its mentorship program connects families with volunteer mentors who provide guidance,
+                support, and empathy.</p>
+        </figure>
+
+        <figure class="gallery__item gallery__item--3">
+            <img src="./Elements/clientsPage/fedo-image.png" class="client-img" alt="Image 3">
+            <h4 class="client-name">Fedo</h4>
+            <p class="client-description">Fedo utilizes machine learning and artificial intelligence to predict
+                individuals’ health risk profiles. Built on a strong foundation of over 1.5M claims and research based
+                on 100+ medical studies, Fedo combines the power of knowledge, data and technology to re-invent health
+                care across the globe.</p>
+        </figure>
+
+        <figure class="gallery__item gallery__item--4">
+            <img src="./Elements/clientsPage/peach_pay-image.png" class="client-img" alt="Image 4" style="height: 100px; width: auto;">
+            <h4 class="client-name">PeachPay</h4>
+            <p class="client-description">PeachPay is a start-up committed to democratizing one-click checkout on
+                e-commerce platforms. Bypassing needless steps of the checkout process, PeachPay minimizes cart
+                abandonment and maximizes customer satisfaction.</p>
+        </figure>
+    </div>
+    <footer>
+        <ul>
+            <li class='footer-nav'><a href="./index.html">Home</a></li>
+            <li class='footer-nav'><a href="./about.html">About Us</a></li>
+            <li class='footer-nav'><a href="./team.html">The Team</a></li>
+            <li class='footer-nav'><a href="./our_projects.html">Projects</a></li>
+            <li class='footer-nav'><a href="./apply.html" style="color: #F3A47D;">For Clients</a></li>
+            <li class='footer-nav'><a href="./apply.html">Join Us</a></li>
+        </ul>
+
+        <div id="contact">
+            <h2>&gt; Contact Us</h2>
+            <p>[1] email: ucladsu@gmail.com </p>
+        </div>
+
+        <ul id="social">
+            <li><a href="https://www.instagram.com/dsuatucla/" target="_blank"><img
+                        src="./Elements/landingPage/ig_logo.png" alt="Instagram"
+                        style="width:50px; height:50px; border:0; border-radius: 100%;"> </a></li>
+            <li><a href="https://www.linkedin.com/company/the-data-science-union-at-ucla/" target="_blank"> <img
+                        src="./Elements/landingPage/linkedin_logo.png" alt="LinkedIn"
+                        style="width:50px; height:50px; border:0; border-radius: 100%;"></a></li>
+            <li><a href="https://www.facebook.com/DSUatUCLA/" target="_blank"><img
+                        src="./Elements/landingPage/facebook_logo.png" alt="Facebook"
+                        style="width:50px; height:50px; border:0; border-radius: 100%;"></a></li>
+            <p>Copyright © 2020 Data Science Union.<br>All rights reserved.</p>
+        </ul>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src='script.js'></script>
+    <script>
+        $(window).on("load", function () {
+            setTimeout(function () {
+                $("#loading").fadeOut("slow");
+            }, 1000);
+        });
+    </script>
+
+</body>
+
+</html>
