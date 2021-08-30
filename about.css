@@ -309,28 +309,55 @@ footer #social p {
 
 #work-places {
   text-align: center;
+  font-style: normal;
   color: #FF925B; 
   font-weight: 500;
   font-size: 35px;
   line-height: 48px;
 }
 
-.gallery-3 {
+
+.image-grid
+{
+  --gap: 50px;
+  width: 80%;
+  --num-cols: 4;
+  --row-height: 150px;
+  box-sizing: border-box;
+  padding: var(--gap-);
   display: grid;
-  margin-top: 10%;
-  grid-template-rows: repeat(3, 15%);
-  grid-template-columns: repeat(4, 22vw);
-  grid-gap: 1%;
-  grid-row-gap: 3%;
-
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+  margin-bottom: 18%;
 }
 
-
-
-.gallery-3 .gallery__item {
-  text-align: center;
-  position: relative;
+.image-grid > img
+{
+  width: 100%; height: 100%;
+  object-fit: contain;
+  margin-top: 50%;
+  margin-bottom: 50%;
 }
+
+.img
+{
+  margin-left: 60px;
+  height: 100px;
+  width: 100px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+/* <= 1024px; adjusting for mobile*/
+@media screen and (max-width:1024px)
+{
+  .image-grid
+  {
+    --num-cols: 2;
+    --row-height: 200px;
+  }
+}
+
 
 section {
   position: relative;
