@@ -389,7 +389,7 @@ footer #social p {
   position: relative;
 }
 
-.faq1, .faq2, .faq3, .faq4, .faq5, .faq6, .faq7 {
+.faq3, .faq4, .faq5, .faq6, .faq7 {
   position: relative;
   display: inline-block;
   border: 1px solid #537ABB;
@@ -404,11 +404,11 @@ footer #social p {
   float: right;
 }
 
-#q1, #q2, #q3, #q4, #q5, #q6, #q7 {
+#q3, #q4, #q5, #q6, #q7 {
   font-weight: 400; 
 }
 
-.faq1 p, .faq2 p, .faq3 p, .faq4 p, .faq5 p, .faq6 p, .faq7 p {
+.faq3 p, .faq4 p, .faq5 p, .faq6 p, .faq7 p {
   display: inline-block;
   margin: 0px;
 }
@@ -417,12 +417,12 @@ footer #social p {
   height: 32px;
 }
 
-.faq1 img, .faq2 img, .faq3 img, .faq4 img, .faq5 img, .faq6 img, .faq7 img {
+.faq3 img, .faq4 img, .faq5 img, .faq6 img, .faq7 img {
   display: inline-block;
   cursor: pointer;
 }
 
-#faq1-answer, #faq2-answer, #faq3-answer, #faq4-answer, #faq5-answer, #faq6-answer, #faq7-answer {
+#faq3-answer, #faq4-answer, #faq5-answer, #faq6-answer, #faq7-answer {
   display: none;
   margin: 10px;
 }

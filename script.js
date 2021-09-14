@@ -1,4 +1,5 @@
 // Variables
+/*
 let view_1 = document.getElementById('faq1-click');
 let q1 = document.getElementById('q1');
 let moreInfo_1 = document.getElementById('faq1-answer');
@@ -7,6 +8,7 @@ let view_2 = document.getElementById('faq2-click');
 let q2 = document.getElementById('q2');
 let moreInfo_2 = document.getElementById('faq2-answer');
 let close_2 = document.getElementById('faq2-rotate');
+*/
 let view_3 = document.getElementById('faq3-click');
 let q3 = document.getElementById('q3');
 let moreInfo_3 = document.getElementById('faq3-answer');
@@ -131,7 +133,7 @@ let close_7 = document.getElementById('faq7-rotate');
 //     view_7.style.display = 'block';
 // }
 
-let open_1 = function() {
+/*let open_1 = function() {
     moreInfo_1.style.display = 'inline-block';
     close_1.style.display = 'inline-block';
     q1.style.color = "#537ABB";
@@ -156,7 +158,7 @@ let hide_2 = function() {
     q2.style.color = "#4C4C4C";
     view_2.style.display = 'block';
 }
-
+*/
 let open_3 = function() {
     moreInfo_3.style.display = 'inline-block';
     close_3.style.display = 'inline-block';
@@ -235,10 +237,10 @@ let hide_7 = function() {
 
 
 // Calls
-view_1.onclick = open_1;
-close_1.onclick = hide_1;
-view_2.onclick = open_2;
-close_2.onclick = hide_2;
+//view_1.onclick = open_1;
+//close_1.onclick = hide_1;
+//view_2.onclick = open_2;
+//close_2.onclick = hide_2;
 view_3.onclick = open_3;
 close_3.onclick = hide_3;
 view_4.onclick = open_4;
