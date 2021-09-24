@@ -377,8 +377,8 @@ footer #social p {
   line-height: 25px;
   align-items: center;
   border-bottom: 1px solid #9D9D9D;
-  padding: 2% 5%;
-  
+  padding: 2% 6%;
+  padding-left: 1%;
 }
 
 .timeline-content a:hover {
