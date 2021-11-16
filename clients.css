@@ -226,10 +226,10 @@ body{
     transition-property: background-color;
     transition-duration: 1.5s;
   }
-    
+  
   #navbar a:hover {
     color: #F3A47D;
-    font-size : 150%; /* Added this to explode font when hovering */
+    /*font-size : 150%;  Added this to explode font when hovering  */
   }
     
   #header:after {
