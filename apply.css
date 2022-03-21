@@ -312,7 +312,7 @@ footer #social p {
   text-align: center; 
   color: #2E488E; 
   margin-top: 5%; 
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 .announcement {
@@ -337,8 +337,8 @@ footer #social p {
   font-size: 35px;
   line-height: 48px;
   margin-left: 10%;
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 35px;
+  margin-bottom: 60px;
 }
 
 .timeline-row {
