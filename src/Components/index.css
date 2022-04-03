@@ -1,3 +1,7 @@
+* {
+  color: white;
+}
+
 .footer {
   position: relative;
   height: 300px;
@@ -10,9 +14,8 @@
 }
 
 .nav-container {
-  font-weight: 100;
+  font-weight: 250;
   font-size: 18px;
-  color: white;
   padding: 0.5rem;
 }
 
@@ -24,4 +27,53 @@
 
 .nav-child:hover {
   color:#F3A47D;
+}
+
+.logos {
+  height: 15%;
+  width: 20%;
+  padding-right: 30px;
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+  padding-bottom: 20px;
+}
+
+.logo-child {
+  display: inline-block;
+  padding-right: 20px;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.mailing-list {
+  width: 80%;
+  border-radius: 16px;
+  height: 80%;
+  border-color: white; 
+  background-color: #2E488E;
+  font-size: 14px;
+  font-weight: thin;
+  margin-right: 40px;
+}
+
+/** HEADER **/ 
+
+.navbar-container {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-child {
+  display:inline-block;
+  padding-right: 60px;
+  position: absolute;
+  padding-top: 10px;
+  color: #344F99;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar-logo {
+ transform: scale(0.75);
 }

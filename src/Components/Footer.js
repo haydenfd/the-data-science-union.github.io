@@ -1,5 +1,8 @@
 import React from 'react';
 import './index.css';
+import FaceBookFooterLogo from './Logos/contact-logos/FacebookFooterLogo.svg';
+import InstagramFooterLogo from './Logos/contact-logos/InstagramFooterLogo.svg';
+import LinkedInFooterLogo from './Logos/contact-logos/LinkedInFooterLogo.svg';
 
 const Footer = () => { 
   return (
@@ -14,9 +17,54 @@ const Footer = () => {
           <p className="nav-child">Join Us</p>
       </div>
 
-        <div className="logos">
-          
-        </div>
+       <div className="logos">
+           {/* <img
+            src={ }
+            alt="DSU @ Email"
+            className='logo-child'
+             /> */}
+          <a
+            href="https://www.instagram.com/dsuatucla/?hl=en"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+            src={InstagramFooterLogo}
+            alt="DSU @ Instagram"
+            className='logo-child' />
+          </a>
+          <a
+            href="https://www.facebook.com/DSUatUCLA/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+            src={FaceBookFooterLogo}
+            alt="DSU @ Facebook"
+            className='logo-child' />
+          </a>
+          {/* <img
+            src={ }
+            alt="DSU @ Github"
+            className='logo-child' /> */}
+          <a
+            href="https://www.linkedin.com/company/the-data-science-union-at-ucla"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+            src={LinkedInFooterLogo}
+            alt="DSU @ Linkedin"
+              className='logo-child' />
+          </a>
+          <button className="mailing-list"
+            onClick={() => alert('Submitted')}
+          >Join our mailing list</button>
+        </div> 
+{/* 
+        <div className="acknowledgment">
+
+        </div> */}
     </div>
     </footer>
   )
