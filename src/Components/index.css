@@ -1,0 +1,27 @@
+.footer {
+  position: relative;
+  height: 300px;
+  bottom: 0px;
+  background-color: #2E488E;
+  width: 100%;
+  padding: auto 10%;
+  border-width: 10em;
+  border-color: #2E488E;
+}
+
+.nav-container {
+  font-weight: 100;
+  font-size: 18px;
+  color: white;
+  padding: 0.5rem;
+}
+
+.nav-child {
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 60px;
+}
+
+.nav-child:hover {
+  color:#F3A47D;
+}

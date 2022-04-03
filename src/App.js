@@ -1,9 +1,11 @@
 import './App.css';
+import Footer from './Components/Footer';
 
 function App() {
   return (
     <div className="App">
-      Data Science Rox!
+      <Footer>
+      </Footer>
     </div>
   );
 }
