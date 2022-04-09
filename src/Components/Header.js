@@ -12,7 +12,7 @@ import DSULogo from './Logos/contact-logos/DSULogo.svg';
 export default class Header extends Component {
   render() {
     return (
-<Navbar collapseOnSelect expand="lg" bg="white" variant="white">
+      <Navbar collapseOnSelect expand="lg py-5" bg="white" variant="white">
   <Container>
     <Navbar.Brand href="/">
       <img src={DSULogo} alt="DSU Logo" className="navbar-logo" />

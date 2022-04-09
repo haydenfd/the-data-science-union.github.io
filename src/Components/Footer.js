@@ -3,6 +3,10 @@ import './index.css';
 import FaceBookFooterLogo from './Logos/contact-logos/FacebookFooterLogo.svg';
 import InstagramFooterLogo from './Logos/contact-logos/InstagramFooterLogo.svg';
 import LinkedInFooterLogo from './Logos/contact-logos/LinkedInFooterLogo.svg';
+import EmailFooterLogo from './Logos/contact-logos/EmailFooterLogo.svg';
+import GithubFooterLogo from './Logos/contact-logos/GithubFooterLogo.svg';
+import AcknowledgmentFooterLogo from './Logos/contact-logos/AcknowledgmentFooterLogo.svg';
+import DSUFooterLogo from './Logos/contact-logos/DSUFooterLogo.svg';
 
 const Footer = () => { 
   return (
@@ -16,13 +20,18 @@ const Footer = () => {
           <p className="nav-child">For Clients</p>
           <p className="nav-child">Join Us</p>
       </div>
-
+        {/* <div className="acknowledgments">
+          <img
+            src={InstagramFooterLogo}
+            alt="DSU @ Instagram"
+           />
+        </div> */}
        <div className="logos">
-           {/* <img
-            src={ }
+           <img
+            src={ EmailFooterLogo }
             alt="DSU @ Email"
             className='logo-child'
-             /> */}
+             />
           <a
             href="https://www.instagram.com/dsuatucla/?hl=en"
             target="_blank"
@@ -43,10 +52,10 @@ const Footer = () => {
             alt="DSU @ Facebook"
             className='logo-child' />
           </a>
-          {/* <img
-            src={ }
+          <img
+            src={ GithubFooterLogo }
             alt="DSU @ Github"
-            className='logo-child' /> */}
+            className='logo-child' />
           <a
             href="https://www.linkedin.com/company/the-data-science-union-at-ucla"
             target="_blank"

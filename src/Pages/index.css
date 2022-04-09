@@ -1,0 +1,28 @@
+.who-we-are{
+  background-color:#2E488E;
+  height: auto;
+  width: 100%;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+.title{
+  text-align: center;
+  color: #F3A47D;
+  font-size:24px;
+  font-weight: strong;
+  top: 50%;
+  left: 50%;
+}
+
+.stats-container {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.stats-child {
+ padding: auto 2.5%;
+  width:20%;
+}
