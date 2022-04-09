@@ -8,6 +8,9 @@ import {
   Link
 } from "react-router-dom";
 import DSULogo from './Logos/contact-logos/DSULogo.svg';
+import GithubFooterLogo from './Logos/contact-logos/GithubFooterLogo.svg';
+import FaceBookFooterLogo from './Logos/contact-logos/FacebookFooterLogo.svg';
+import InstagramFooterLogo from './Logos/contact-logos/InstagramFooterLogo.svg';
 
 export default class Header extends Component {
   render() {
@@ -27,6 +30,9 @@ export default class Header extends Component {
               <Nav.Link href="projects" className="navbar-child">Projects</Nav.Link>
               <Nav.Link href="for-clients" className="navbar-child">For Clients</Nav.Link>
               <Nav.Link href="for-clients" className="navbar-child">Join Us</Nav.Link>
+              {/* <img src={GithubFooterLogo} alt="DSU Logo" className="navbar-logo" />
+              <img src={FaceBookFooterLogo} alt="DSU Logo" className="navnavbar-logo" />
+              <img src={InstagramFooterLogo} alt="DSU Logo" className="navbar-logo" /> */}
       </Nav>
     </Navbar.Collapse>
   </Container>

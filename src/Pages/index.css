@@ -26,3 +26,33 @@
  padding: auto 2.5%;
   width:20%;
 }
+
+.partner-with-us-btn{
+  color: white;
+  background-color: #F3A47D;
+  border-radius: 16px;
+  border-color: #F3A47D;
+  padding:0.5%;
+  margin-left:49.5%;
+}
+
+.partner-with-us-btn:hover{
+  color:#2E488E;
+}
+
+.where-we-work{
+  background-color:white;
+  padding-left: 1rem;
+}
+.company-logo {
+  max-height:5%;
+  max-width: 5%;
+  margin-right:5%;
+}
+
+.projects-slider{
+  color: #F3A47D;
+  background-color: white;
+  
+
+}
