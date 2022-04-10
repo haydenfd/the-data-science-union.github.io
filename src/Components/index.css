@@ -98,3 +98,37 @@
     margin-left: 1.5%;
     margin-top: 2.5%;
 }
+
+/* Project Card */
+.project-card {
+  background-color: #E6E7FF;
+  border-radius:12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width:30%;
+  height:auto;
+  padding: 2.5%;
+  margin-left:2.5%;
+  /* display:inline-block; */
+}
+
+.project-card-title {
+  color:#537ABB;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.project-card-img {
+  border-radius: 16px;
+  height:70%;
+  width:70%;
+}
+
+.quarter {
+  color: rgba(0,0,0,0.7);
+  font-size: 30px;
+  margin-top:5%;
+  margin-bottom:5%;
+}
