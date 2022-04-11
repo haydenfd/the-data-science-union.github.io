@@ -6,15 +6,15 @@ import Landing from './Pages/Landing';
 import Projects from './Pages/Projects';
 import Join from './Pages/Join';
 import Clients from './Pages/Clients';
+import Team from './Pages/Team';
+import Accordion from './Components/Accordion';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Landing />
-      <Join />
-      <Projects />
-      <Clients />
-      <Footer />  
+      < Accordion title="What is your return policy?" content="Lorem Ipsum dolor sit amet." />
+      < Accordion title="What is your return policy?" content="Lorem Ipsum dolor sit amet." />
+      < Accordion title="What is your return policy?" content="Lorem Ipsum dolor sit amet." />
+      < Accordion title="What is your return policy?" content="Lorem Ipsum dolor sit amet." />
     </div>
   );
 }

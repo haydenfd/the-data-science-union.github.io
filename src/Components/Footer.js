@@ -20,12 +20,6 @@ const Footer = () => {
           <p className="nav-child">For Clients</p>
           <p className="nav-child">Join Us</p>
       </div>
-        {/* <div className="acknowledgments">
-          <img
-            src={InstagramFooterLogo}
-            alt="DSU @ Instagram"
-           />
-        </div> */}
        <div className="logos">
            <img
             src={ EmailFooterLogo }
@@ -70,10 +64,6 @@ const Footer = () => {
             onClick={() => alert('Submitted')}
           >Join our mailing list</button>
         </div> 
-{/* 
-        <div className="acknowledgment">
-
-        </div> */}
     </div>
     </footer>
   )
