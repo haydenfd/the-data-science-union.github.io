@@ -16,5 +16,4 @@ const Chevron = (props) => {
 )
 }
 
-
 export default Chevron;

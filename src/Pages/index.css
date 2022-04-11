@@ -104,22 +104,33 @@
 
 /* JOIN */
 
+.join-us-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .join-title {
   color: #F3A47D;
   font-size: 40px;
   font-weight: bold;
-  margin-left: 40%;
   margin-bottom: 2%;
+  margin-top:2%;
 }
 
 .join-text {
   color: black;
-  margin-left:5%;
   margin-bottom: 5%;
+  margin-left: auto;
+  font-size:18px;
+  padding:2%;
 }
 
 .faq-container {
-  margin-bottom:8%;
+  margin-bottom:2%;
+  display:block;
+  width:auto;
+  margin-left:auto;
 }
 
 /* CLIENTS */

@@ -14,30 +14,23 @@ const Accordion = (props) => {
     setIsActive(isActive === ""? "active" : "");
     setHeight(isActive === "active" ? "0px" : `${content.current.scrollHeight}px`
     );
-    setRotate(isActive === "active" ? "accordion__icon" : "accordion__icon rotate")
-    
-    if (isActive === "active") {
-      document.getElementById("accordion-content").style.display = 'block';
-    } else { 
-      document.getElementById("accordion-content").style.display = 'none';
-    }
+    setRotate(isActive === "active"? "accordion__icon" : "accordion__icon rotate")
   }
 
   return (
     <div className="accordion-section">
       <button className={`accordion ${isActive}`} onClick={toggleAccordion}>
         <p className="accordion-title">
-          {props.title}
+          {props.question}
         </p>
-        <Chevron className={`${rotate}`} width={15} fill={"#344F99"} />
-        <div ref={content} style={{ maxHeight: `${height}` }} id="accordion-content">
-          <div
-            className="accordion-text"
-            dangerouslySetInnerHTML={{ __html: props.content }}
-          />
-
-        </div>
+        <Chevron className={`${rotate}`} width={15} fill={"#344F99"}/>
       </button>
+      <div ref={content} style={{maxHeight: `${height}`}}className="accordion-content">
+        <div
+          className="accordion-text"
+          dangerouslySetInnerHTML={{ __html: props.answer}}
+        />
+      </div>
     </div>
   )
 }

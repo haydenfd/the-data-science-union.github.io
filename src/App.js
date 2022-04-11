@@ -11,10 +11,7 @@ import Accordion from './Components/Accordion';
 function App() {
   return (
     <div className="App">
-      < Accordion title="What is your return policy?" content="Lorem Ipsum dolor sit amet." />
-      < Accordion title="What is your return policy?" content="Lorem Ipsum dolor sit amet." />
-      < Accordion title="What is your return policy?" content="Lorem Ipsum dolor sit amet." />
-      < Accordion title="What is your return policy?" content="Lorem Ipsum dolor sit amet." />
+      <Join />
     </div>
   );
 }
