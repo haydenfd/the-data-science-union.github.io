@@ -103,27 +103,28 @@
 .project-card {
   background-color: #E6E7FF;
   border-radius:12px;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
+  display:inline-block;
   text-align: center;
   width:30%;
   height:auto;
   padding: 2.5%;
-  margin-left:2.5%;
-  /* display:inline-block; */
+  margin: 6% !important;
 }
 
 .project-card-title {
-  color:#537ABB;
-  font-size: 18px;
+  color: #344F99;
+  font-size: 22px;
   font-weight: bold;
+  margin-bottom: 5%;
 }
 
 .project-card-img {
   border-radius: 16px;
-  height:70%;
-  width:70%;
+  height:90%;
+  width:90%;
 }
 
 .quarter {
@@ -131,4 +132,41 @@
   font-size: 30px;
   margin-top:5%;
   margin-bottom:5%;
+}
+
+/* FAQ Card */
+
+.title{
+  color: black;
+}
+
+.content{
+  color: black;
+}
+
+/* Stats Card */
+.stats-card-container {
+  background-color:white;
+  height: auto;
+  width: 80%;
+  padding-right:0%;
+  padding-left:7.5%;
+  padding-top:2.5%;
+  text-align: center;
+}
+
+.stats-card-figure {
+  font-size: 48px;
+  font-weight: 800;
+  color: #F3A47D;
+  text-align: center;
+  width:50%;
+}
+
+.stats-card-text {
+  font-size:30px;
+  font-weight:600;
+  color:#36393c;
+  width:50%;
+  text-align: center;
 }

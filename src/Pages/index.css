@@ -1,42 +1,66 @@
+/* Landing */
+
 .who-we-are{
   background-color:#2E488E;
   height: auto;
   width: 100%;
   padding: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
+  text-align: center;
 }
 
-.title{
-  text-align: center;
+.section-title{
   color: #F3A47D;
-  font-size:24px;
+  font-size:28px;
   font-weight: strong;
-  top: 50%;
-  left: 50%;
+}
+
+.emphasized-text{
+  color: #F3A47D;
+  display:inline;
+}
+
+.section-content{
+  padding-left: 12.5%;
+  padding-right: 12.5%;
+  width:auto;
+  padding-top:2%;
+  font-size: 18px;
 }
 
 .stats-container {
   background-color: white;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
-.stats-child {
- padding: auto 2.5%;
-  width:20%;
+
+.for-clients {
+  background-color:#2E488E;
+  height: auto;
+  width: 100%;
+  padding: 5%;
+  margin-bottom: 5%;
+  text-align: center;
 }
 
 .partner-with-us-btn{
   color: white;
   background-color: #F3A47D;
   border-radius: 16px;
-  border-color: #F3A47D;
-  padding:0.5%;
-  margin-left:49.5%;
+  border-color: transparent;
+  padding:1%;
+  margin-top:2%;
 }
 
 .partner-with-us-btn:hover{
+  transform: scale(1.05);
+}
+
+.partner-with-us-btn:active {
+  transform: scale(0.95);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
   color:#2E488E;
 }
 
@@ -62,10 +86,177 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  background-image: linear-gradient(#FFF,rgba(173, 216, 230, 0.28));
 }
 
 .projects-title {
   font-size: 40px;
   color:#F3A47D;
   font-weight: bold;
+  padding-bottom:3%;
+}
+
+.quarter-title {
+  font-size:30px;
+  font-weight:700;
+  color: rgba(0,0,0,0.8);
+}
+
+/* JOIN */
+
+.join-title {
+  color: #F3A47D;
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 40%;
+  margin-bottom: 2%;
+}
+
+.join-text {
+  color: black;
+  margin-left:5%;
+  margin-bottom: 5%;
+}
+
+.faq-container {
+  margin-bottom:8%;
+}
+
+/* CLIENTS */
+
+.working-with-dsu {
+  background-color:#2E488E;
+  height: auto;
+  width: 100%;
+  padding: 8%;
+  margin-bottom: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.working-with-dsu-title {
+  color: #F3A47D;
+  font-size:28px;
+  font-weight: strong;
+}
+
+.working-with-dsu-content-container {
+  background-color:#E6E7FF;
+  width:40%;
+  height:auto;
+  margin:1.5%;
+  border-radius: 16px;
+  padding:2% 3% 1% 3%;
+  margin-left:30%;
+  box-shadow:7px 7px rgba(0,0,0,0.19);
+}
+
+.working-with-dsu-content {
+  color:#2E488E;
+  font-size:17px;
+  justify-content:center;
+}
+
+.statements-container {
+  text-align: center;
+  width:90%;
+  padding-left:10%;
+  margin-bottom:8%;
+}
+
+.statement {
+  display:inline-block;
+  width:100%;
+  font-weight:500;
+  font-size:42px;
+  color:#2E488E;
+}
+
+.contact-container {
+  text-align: center;
+  background-color:rgba(173, 216, 230, 0.28);
+  padding-bottom:5%;
+  padding-top:5%;
+}
+
+.contact-title {
+  font-size:42px;
+  font-weight: bold;
+  color:#F3A47D;
+}
+
+.contact-card-container {
+  background-color: white;
+  border-radius:16px;
+  width:60%;
+  padding: 3%;
+  margin-top:5%;
+  display: inline-block;  
+  box-shadow:7px 7px rgba(0,0,0,0.19);
+}
+
+.contact-card-input {
+  background-color:rgba(0,0,0,0.1);
+  border-radius: 24px;
+  width: 62.5%;
+  color: black;
+  padding-left:2%;
+  padding:1.5%;
+  border-color: rgba(0,0,0,0);
+  font-size: 14px;
+  margin-bottom:3%;
+  display: block;
+  float:right;
+}
+
+.long {
+  height:250px;
+}
+
+.contact-card-btn {
+  width:20%;
+  background-color:#F3A47D;
+  color: white;
+  padding:1%;
+  border-radius:20px;
+  border-color: transparent;
+  font-weight:500;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  display:block;
+}
+
+.contact-card-btn:hover {
+  transform: scale(1.05);
+}
+
+.contact-card-btn:active {
+  transform: scale(0.95);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  color:#2E488E;
+}
+
+.contact-card-profile {
+  display:block;
+  width:50%;
+}
+
+.contact-card-profile-pic {
+  background-color:rgba(0,0,0,0.1);
+  width:40%;
+  border-radius:16px;
+  height:200px;
+  box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.24);
+  margin-top:5%;
+}
+
+.contact-card-profile-name {
+  color: rgba(0,0,0,0.8);
+  font-size: 24px;
+}
+
+.contact-card-profile-pos {
+  color:#2E488E;
+  font-size:18px;
 }
