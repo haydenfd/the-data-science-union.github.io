@@ -2,23 +2,6 @@ import React, { Component } from 'react'
 import { Alert } from 'react-bootstrap'
 import './index.css'
 import StatsCard from '../Components/StatsCard';
-import Accenture from '../Components/Logos/company-logos/accenture.png';
-import Aktana from '../Components/Logos/company-logos/aktana.jpg';
-import Amazon from '../Components/Logos/company-logos/amazon.png';
-import BP from '../Components/Logos/company-logos/bp.png';
-import Deloitte from '../Components/Logos/company-logos/deloitte.jpg';
-import DRW from '../Components/Logos/company-logos/drw.png';
-import InternetBrands from '../Components/Logos/company-logos/internet-brands.png';
-import KPMG from '../Components/Logos/company-logos/kpmg.png';
-import Mckinsey from '../Components/Logos/company-logos/mckinsey.png';
-import Meta from '../Components/Logos/company-logos/meta.png';
-import Microsoft from '../Components/Logos/company-logos/microsoft.png';
-import MorganStanley from '../Components/Logos/company-logos/morgan-stanley.png';
-import PacificLife from '../Components/Logos/company-logos/pacific-life.jpeg';
-import Uber from '../Components/Logos/company-logos/uber.jpg';
-import UCLAPsychology from '../Components/Logos/company-logos/ucla-psychology.png';
-import Visa from '../Components/Logos/company-logos/visa.png';
-import ZS from '../Components/Logos/company-logos/zs.jpeg';
 
 export default class Landing extends Component {
 
@@ -52,16 +35,16 @@ export default class Landing extends Component {
             For Clients
           </h1>
           <p className="section-content">
-            At DSU, our most experienced members work <p className="emphasized-text">pro bono</p> to provide you with < p className="emphasized-text">data-driven consulting services</p>. We produce a thorough analysis of your data, so you can better your services with< p className="emphasized-text"> well-rounded insights.</p>
+            At DSU, our most experienced members work <p className="emphasized-text">pro bono</p> to provide you with < p className="emphasized-text">data-driven consulting services</p>. We produce a thorough analysis of your data, so you can better your services with< p className="emphasized-text"> well-rounded insights</p>.
           </p>
           <button className="partner-with-us-btn" onClick={() => alert("Thanks for submission")}>Want to partner with us?</button>
         </section>
 
         <div className="where-we-work py-5">
-          <h1 className="title">
+          {/* <h1 className="title">
             Where We Work
-          </h1>
-          <img
+          </h1> */}
+          {/* <img
             src={Accenture}
             className="company-logo"
             alt="Accenture"
@@ -109,7 +92,7 @@ export default class Landing extends Component {
           <img src={Uber} className="company-logo"/>
           <img src={UCLAPsychology} className="company-logo"/>
           <img src={Visa} className="company-logo"/>
-          <img src={ZS} className="company-logo"/>
+          <img src={ZS} className="company-logo"/> */}
           
         </div>
 
@@ -117,8 +100,3 @@ export default class Landing extends Component {
     )
   }
 }
-
-
-// At DSU, our most experienced members work pro bono to provide you with the data - driven consulting services.We produce a thorough analysis of your data, so you can better your services with well - rounded insights.
-
-// < p style = {{ color: '#F3A47D', display: 'inline', textAlign: 'justify' }}>

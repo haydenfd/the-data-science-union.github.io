@@ -6,7 +6,7 @@ const StatsCard = (props) => {
     <div className="stats-card-container">
       <h1 className="stats-card-figure">
         { props.figure }
-      </h1>e
+      </h1>
       <h2 className="stats-card-text">
         { props.text }
       </h2>

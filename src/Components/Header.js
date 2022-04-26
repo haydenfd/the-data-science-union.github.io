@@ -3,7 +3,6 @@ import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Container} from 'r
 import React, { Component } from 'react'
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
   Link
 } from "react-router-dom";
@@ -16,7 +15,8 @@ export default class Header extends Component {
   render() {
     return (
       <Navbar collapseOnSelect expand="lg py-5" bg="white" variant="white">
-  <Container>
+        <Container>
+    <Router>
     <Navbar.Brand href="/">
       <img src={DSULogo} alt="DSU Logo" className="navbar-logo" />
     </Navbar.Brand>
@@ -24,18 +24,21 @@ export default class Header extends Component {
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="me-auto">
       </Nav>
-            <Nav style={ {width: '70%'} }>
-              <Nav.Link href="about-us" className="navbar-child">About Us</Nav.Link>
+              <Nav style={{ width: '60%' }}>
+                <Nav.Link href="about-us" className="navbar-child">About Us
+                </Nav.Link>
               <Nav.Link href="the-team" className="navbar-child">The Team</Nav.Link>
               <Nav.Link href="projects" className="navbar-child">Projects</Nav.Link>
               <Nav.Link href="for-clients" className="navbar-child">For Clients</Nav.Link>
-              <Nav.Link href="for-clients" className="navbar-child">Join Us</Nav.Link>
+                <Nav.Link href="for-clients" className="navbar-child">Join Us
+                </Nav.Link>
               {/* <img src={GithubFooterLogo} alt="DSU Logo" className="navbar-logo" />
               <img src={FaceBookFooterLogo} alt="DSU Logo" className="navnavbar-logo" />
               <img src={InstagramFooterLogo} alt="DSU Logo" className="navbar-logo" /> */}
       </Nav>
-    </Navbar.Collapse>
-  </Container>
+            </Navbar.Collapse>
+      </Router>
+      </Container>
       </Navbar>
           )
   }

@@ -7,11 +7,17 @@ import Projects from './Pages/Projects';
 import Join from './Pages/Join';
 import Clients from './Pages/Clients';
 import Team from './Pages/Team';
-import Accordion from './Components/Accordion';
+
 function App() {
   return (
     <div className="App">
+      <Header />
+      <Landing />
+      <Projects />
       <Join />
+      <Clients />
+      <Team />
+      <Footer />
     </div>
   );
 }

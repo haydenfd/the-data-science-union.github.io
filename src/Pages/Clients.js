@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './index.css';
+import ContactCard from '../Components/ContactCard';
 
 const testimonials = [
   {
@@ -9,30 +10,6 @@ const testimonials = [
 ];
 
 const Clients = () => { 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleNameChange = (e) => { 
-    setName(e.target.value);
-  }
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  }
-
-  const handleMessageChange = (e) => {
-    setMessage(e.target.value);
-  }
-
-  const handleSubmit = (e) => { 
-    e.preventDefault();
-    console.log({
-      name: name,
-      email: email,
-      message: message,
-    })
-  }
 
   return (
     <div>
@@ -51,46 +28,7 @@ const Clients = () => {
         <p className="statement">You have the <p style={{color: '#89B8EF', display: 'inline'}}>data</p>.</p>
         <p className="statement">We have the <p style={{ color: '#F3A47D', display: 'inline' }}>insights</p>.</p>
       </section>
-
-      <section className="contact-container">
-        <h1 className="contact-title">
-          Get In Touch
-        </h1>
-        <form className="contact-card-container">
-          <input
-            placeholder="Name"
-            className="contact-card-input"
-            onChange={handleNameChange}
-            required
-          />
-          <input
-            placeholder="Email"
-            className="contact-card-input"
-            onChange={handleEmailChange}
-            required
-          />
-          <textarea
-            placeholder="Please enter your message here"
-            className="contact-card-input long"
-            onChange={handleMessageChange}
-          />
-          <button
-            className="contact-card-btn"
-            onSubmit={ handleSubmit }
-          > Submit
-          </button>
-          <div className="contact-card-profile">
-            <div className="contact-card-profile-pic">
-            </div>
-            <h2 className="contact-card-profile-name">
-              Emily Gong
-            </h2>
-            <h3 className="contact-card-profile-pos">
-              Director Of Professional Outreach
-            </h3>
-          </div>
-        </form>
-      </section>
+      <ContactCard/>
     </div>
   )
 }
