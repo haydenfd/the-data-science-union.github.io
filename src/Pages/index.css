@@ -215,9 +215,13 @@
   margin-right:0%;
 }
 
-/* .member-card {
- 
+.exec-container {
+  display:flex;
+  flex-wrap: wrap;
+  text-align:center;
 }
 
-.profiles-container {
-} */
+.member-card-container {
+  width:33%;
+  height: 33%;
+}

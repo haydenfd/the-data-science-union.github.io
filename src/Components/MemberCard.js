@@ -3,8 +3,13 @@ import './index.css'
 
 const MemberCard = (props) => { 
   return (
-    <div className="member-card-container">
-      <img className="member-pic" src={props.img} alt={props.name}/>
+    <>
+      <img
+        className="member-pic"
+        src={props.img}
+        alt={props.name}
+        loading="lazy"
+      />
       <p className="member-name">
         {props.name}
       </p>
@@ -15,7 +20,7 @@ const MemberCard = (props) => {
         }
         Class of <p style={{ display: 'inline', fontStyle: 'italic', color: 'black'}}>{props.year}</p>
       </p>
-    </div>
+    </>
   )
 } 
 
