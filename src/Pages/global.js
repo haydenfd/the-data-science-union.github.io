@@ -1,11 +1,14 @@
 import aimee from '../Components/Images/Members/aimee-xu.jpg';
 import christine from '../Components/Images/Members/christine-hamakawa.jpg';
-import emily from '../Components/Images/Members/emily-gong.jpeg';
+import emily from '../Components/Images/Members/emily-gong.jpg';
 import hayden from '../Components/Images/Members/hayden-dsouza.jpeg';
-import madison from '../Components/Images/Members/madison-kohls.jpeg';
+import madison from '../Components/Images/Members/madison-kohls.jpg';
+import sarah_sotoudeh from '../Components/Images/Members/sarah-sotoudeh.jpg';
+import daniel from '../Components/Images/Members/daniel-mendelevitch.jpg';
 import sean from '../Components/Images/Members/sean-tjoa.jpg';
 import tristan from '../Components/Images/Members/tristan-dewing.jpg';
-import vince from '../Components/Images/Members/vince-front.jpg';
+import vince from '../Components/Images/Members/vincent-front.jpg';
+import nick from '../Components/Images/Members/nicholas-monozon.png';
 import karina from '../Components/Images/Members/karina-santoso.jpeg';
 import helen from '../Components/Images/Members/helen-coffman.jpg';
 import ryan from '../Components/Images/Members/ryan-ohlinger.jpg';
@@ -51,19 +54,19 @@ export const exec = [
   {
     name: 'Christine Hamakawa',
     pos: 'External Vice-President',
-    year: "'24",
+    year: "'23",
     img: christine,
   },
   {
     name: 'Tristan Dewing',
     pos: 'Internal Vice-President',
-    year: "'24",
+    year: "'23",
     img: tristan,
   },
   {
     name: 'Madison Kohls',
     pos: 'Executive Advisor',
-    year: "'24",
+    year: "'23",
     img: madison,
   },
   {
@@ -79,9 +82,33 @@ export const exec = [
     img: aimee,
   },
   {
+    name: 'Nicholas Monozon',
+    pos: 'Co-director Of Curriculum',
+    year: "'25",
+    img: nick,
+  },
+  {
+    name: 'Daniel Mendelevitch',
+    pos: 'Co-director Of Curriculum',
+    year: "'25",
+    img: daniel,
+  },
+  {
+    name: 'Sarah Sotoudeh',
+    pos: 'Director Of Projects',
+    year: "'25",
+    img: sarah_sotoudeh,
+  },
+  {
     name: 'Vincent Front',
     pos: 'Director Of Membership',
-    year: "'24",
+    year: "'23",
+    img: vince,
+  },
+  {
+    name: 'Madeline Kim',
+    pos: 'Director Of Marketing',
+    year: "'25",
     img: vince,
   },
   {
@@ -96,13 +123,13 @@ export const gen = [
   {
     name: 'Karina Santoso',
     pos: '',
-    year: "'24",
+    year: "'23",
     img: karina,
   },
   {
     name: 'Ryan Ohlinger',
     pos: '',
-    year: "'24",
+    year: "'23",
     img: ryan,
   },
   {
@@ -114,31 +141,31 @@ export const gen = [
   {
     name: 'Sarah Kosic',
     pos: '',
-    year: "'24",
+    year: "'23",
     img: sarah,
   },
   {
     name: 'William Foote',
     pos: '',
-    year: "'24",
+    year: "'22",
     img: william,
   },
   {
     name: 'Tushar Roy',
     pos: '',
-    year: "'24",
+    year: "'23",
     img: tushar,
   },
   {
     name: 'Shail Mirpuri',
     pos: '',
-    year: "'24",
+    year: "'23",
     img: shail,
   },
   {
     name: 'Ishaan Shah',
     pos: '',
-    year: "'24",
+    year: "'23",
     img: ishaan,
   },
 ]

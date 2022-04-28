@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './index.css';
-import Emily from './Images/Members/emily-gong.jpeg';
+import Emily from './Images/Members/emily-gong.jpg';
 const ContactCard = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
