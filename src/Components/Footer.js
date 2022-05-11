@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './index.css';
 import FaceBookFooterLogo from './Logos/contact-logos/FacebookFooterLogo.svg';
 import InstagramFooterLogo from './Logos/contact-logos/InstagramFooterLogo.svg';
@@ -7,11 +7,50 @@ import EmailFooterLogo from './Logos/contact-logos/EmailFooterLogo.svg';
 import GithubFooterLogo from './Logos/contact-logos/GithubFooterLogo.svg';
 import AcknowledgmentFooterLogo from './Logos/contact-logos/AcknowledgmentFooterLogo.svg';
 import DSUFooterLogo from './Logos/contact-logos/DSUFooterLogo.svg';
+import Modal from "react-bootstrap/Modal";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
 const Footer = () => { 
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <footer>
-    <div className="footer">
+      <div className="footer">
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header className="modal-title" closeButton>
+            <Modal.Title>Stay in touch with DSU</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Form>
+              <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                <Form.Label className="form-label">What's your name?</Form.Label>
+                <Form.Control
+                  placeholder="John Doe"
+                  autoFocus
+                />
+              </Form.Group>
+              <Form.Group
+                className="mb-3"
+                controlId="exampleForm.ControlInput1"
+              >
+                <Form.Label className="form-label">What's your email address?</Form.Label>
+                <Form.Control
+                  type="email"
+                  placeholder="johndoe@ucla.edu"
+                  autoFocus
+                />
+              </Form.Group>
+            </Form>
+          </Modal.Body>
+            <Button className="modal-button" onClick={handleClose}>
+              Submit!
+            </Button>
+        </Modal>
       <div className="nav-container">
           <p className="nav-child">Home</p>
           <p className="nav-child">About Us</p>
@@ -61,7 +100,7 @@ const Footer = () => {
               className='logo-child' />
           </a>
           <button className="mailing-list"
-            onClick={() => alert('Submitted')}
+            onClick={handleShow}
           >Join our mailing list</button>
         </div> 
     </div>

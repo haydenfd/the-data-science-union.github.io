@@ -14,6 +14,21 @@
   border-color: #2E488E;
 }
 
+.modal-title {
+  color: black;
+  text-align: center;
+}
+
+.modal-button {
+  background-color:#2E488E;
+  color: #F3A47D;
+}
+
+.form-label {
+  color: black;
+
+}
+
 .nav-container {
   font-weight: 250;
   font-size: 18px;
@@ -207,6 +222,10 @@
   margin-bottom:1%;
   max-width: 60%;
   max-height:60%;
+}
+
+.member-pic:hover {
+  filter: brightness(40%);
 }
 
 /* Accordion */
@@ -406,3 +425,4 @@ textarea {
 .styled-input {
   font-weight: 500;
 }
+
