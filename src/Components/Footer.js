@@ -14,9 +14,43 @@ import Button from "react-bootstrap/Button";
 const Footer = () => { 
 
   const [show, setShow] = useState(false);
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
 
+  const handleFirstNameChange = (e) =>  setFirstName(e.target.value);
+  const handleLastNameChange = (e) => setLastName(e.target.value);
+  const handleEmailChange = (e) => setEmail(e.target.value);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    if (firstName.length === 0) {
+      alert('Looks like you forgot to tell us your first name!')
+    }
+
+    else if (lastName.length === 0) { 
+      alert('Looks like you forgot to tell us your last name!')
+    }
+      
+    else if (email.length === 0) {
+      alert('Oops! We don\'t know how to update you! Please fill out a valid email!')
+    }
+    else { 
+      console.log({
+        first: firstName,
+        last: lastName,
+        email: email,
+      })
+      alert('Welcome onboard!')
+    }
+  }
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const submit = (e) => { 
+    if (e.keyCode === 13) { 
+      handleSubmit(e);
+    }
+  }
 
   return (
     <footer>
@@ -28,10 +62,22 @@ const Footer = () => {
           <Modal.Body>
             <Form>
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                <Form.Label className="form-label">What's your name?</Form.Label>
+                <Form.Label className="form-label">What's your first name?</Form.Label>
                 <Form.Control
-                  placeholder="John Doe"
+                  placeholder="John"
                   autoFocus
+                  value={firstName}
+                  onChange={handleFirstNameChange}
+                />
+                
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                <Form.Label className="form-label">What's your last name?</Form.Label>
+                <Form.Control
+                  placeholder="Doe"
+                  autoFocus
+                  value={lastName}
+                  onChange={handleLastNameChange}
                 />
               </Form.Group>
               <Form.Group
@@ -43,11 +89,15 @@ const Footer = () => {
                   type="email"
                   placeholder="johndoe@ucla.edu"
                   autoFocus
+                  value={email}
+                  onChange={handleEmailChange}
+                  onKeyDown={(e) => submit(e)}
                 />
               </Form.Group>
             </Form>
           </Modal.Body>
-            <Button className="modal-button" onClick={handleClose}>
+          <Button type="submit"
+            className="modal-button" onClick={handleSubmit}>
               Submit!
             </Button>
         </Modal>
